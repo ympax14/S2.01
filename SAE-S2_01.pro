@@ -8,13 +8,13 @@ CONFIG += c++17
 
 SOURCES += \
     ./src/main.cpp \
-    ./src/mainwindow.cpp
+    ./src/NowPlayingWindow.cpp
 
 HEADERS += \
-    ./src/mainwindow.h
-
-FORMS += \
-    ./ui/mainwindow.ui
+    ./src/NowPlayingWindow.hpp \
+    ./src/utils/Deserializer.hpp \
+    ./src/utils/Serializer.hpp \
+    ./src/data/Song.hpp
 
 TRANSLATIONS += \
     ./langs/SAE-S2_01_fr_FR.ts
