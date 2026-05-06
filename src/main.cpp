@@ -1,12 +1,10 @@
-#include "mainwindow.h"
+#include "NowPlayingWindow.hpp"
 
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
 
-int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
-
+void loadTranslations(QApplication &a) {
     QTranslator translator;
 
     const QStringList uiLanguages = QLocale::system().uiLanguages();
@@ -17,9 +15,15 @@ int main(int argc, char *argv[]) {
             break;
         }
     }
+}
 
-    MainWindow w;
-    w.show();
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+
+    loadTranslations(app);
+
+    NowPlayingWindow window;
+    window.show();
 
     return QCoreApplication::exec();
 }
