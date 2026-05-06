@@ -7,8 +7,9 @@
 #include <QJsonObject>
 #include <QMetaEnum>
 
-namespace Deserializer {
-    bool isQuint16(const QJsonValue& value) {
+class Deserializer {
+public:
+    static bool isQuint16(const QJsonValue& value) {
         if (value.isDouble()) {
             double num = value.toDouble();
 
@@ -17,7 +18,7 @@ namespace Deserializer {
         } else return false;
     }
 
-    bool isQuint8(const QJsonValue& value) {
+    static bool isQuint8(const QJsonValue& value) {
         if (value.isDouble()) {
             double num = value.toDouble();
 
@@ -26,7 +27,7 @@ namespace Deserializer {
         } else return false;
     }
 
-    template<typename T> bool isValidEnumValue(QJsonValue value) {
+    template<typename T> static bool isValidEnumValue(QJsonValue value) {
         if (value.isUndefined() || value.isNull() || !value.isString())
             return false;
 
@@ -39,33 +40,35 @@ namespace Deserializer {
         return val != -1;
     }
 
-    template<typename T> T parseEnumValue(QJsonValue value) {
+    template<typename T> static T parseEnumValue(QJsonValue value) {
         if (value.isUndefined() || value.isNull() || !value.isString())
-            return false;
+            throw std::invalid_argument("Specified value is invalid");
 
         const QString str = value.toString();
         if (str.isEmpty())
-            return false;
+            throw std::invalid_argument("Specified value is null");
 
         int val = QMetaEnum::fromType<T>().keyToValue(str.toUtf8().constData());
 
         if (val != -1)
             return static_cast<T>(val);
         else
-            throw std::invalid_argument("Cette valeur n'appartient pas à l'énumération !");
+            throw std::invalid_argument("The value isn't a part of the specified enum.");
     }
 
-    void JSON(QString path) {
+    static QJsonObject loadJson(QString path) {
+        if (path.isNull() || path.isEmpty())
+            throw std::invalid_argument("Specified file path is invalid.");
+
         QFile file = QFile(path);
-        if (!file.open(QIODevice::ReadOnly)) {
-            throw std::invalid_argument("Invalid input path to deserialize.");
-        }
+        if (!file.open(QIODevice::ReadOnly))
+            throw std::invalid_argument("Invalid file path to deserialize.");
 
         QByteArray byteArray = file.readAll();
 
         QJsonDocument jsonDocument = QJsonDocument::fromJson(byteArray);
-        QJsonObject jsonObj  = jsonDocument.object();
+        return jsonDocument.object();
     }
-}
+};
 
 #endif // DESERIALIZER_HPP

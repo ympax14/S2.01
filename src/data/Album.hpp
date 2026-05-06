@@ -12,10 +12,10 @@
 #include <QMetaEnum>
 #include <functional>
 
-class Album {
+class Album : QObject {
 
 public:
-    enum Category{
+    enum Category {
         POP,
         ROCK,
         BLUES,
@@ -35,6 +35,9 @@ public:
         FLAC,
     };
 
+    Q_ENUM(SupportType);
+    Q_ENUM(Category);
+
 private:
     QString title, artistName, compositorName, personalNotes, imageCover;
     quint16 editionYear;
@@ -44,8 +47,9 @@ private:
     std::vector<Song> songs;
 
 public:
-    Album();
-    ~Album();
+    Album() = default;
+    Album(const Album&) = delete;
+    ~Album() = default;
 
     inline void setTitle(QString _title) {
         title = _title;
@@ -151,13 +155,12 @@ public:
         obj["supportType"] = Serializer::serializeEnumValue(this->supportType);
         obj["personalNotes"] = this->personalNotes;
 
-        QJsonObject songsObj;
+        QJsonArray songsArr;
 
-        size_t currIndex = 0;
         for (const Song& song : this->songs)
-            songsObj[QString::number(currIndex++)] = song.toJson();
+            songsArr.append(song.toJson());
 
-        obj["songs"] = songsObj;
+        obj["songs"] = songsArr;
 
         return obj;
     }
@@ -165,31 +168,31 @@ public:
     static bool verifyInputIntegrity(const QJsonObject &obj) {
         static std::map<QString, std::function<bool(QJsonValue)>> requiredKeys = {
             {"title", [](QJsonValue value) -> bool {
-                 return value.isString();
+                return value.isString();
             }},
             {"artistName", [](QJsonValue value) -> bool {
-                 return value.isString();
+                return value.isString();
             }},
             {"compositorName", [](QJsonValue value) -> bool {
-                 return value.isString();
+                return value.isString();
             }},
             {"editionYear", [](QJsonValue value) -> bool {
-                 return Deserializer::isQuint16(value);
+                return Deserializer::isQuint16(value);
             }},
             {"euroPrice", [](QJsonValue value) -> bool {
-                 return value.isDouble();
+                return value.isDouble();
             }},
             {"imageCover", [](QJsonValue value) -> bool {
-                 return value.isString();
+                return value.isString();
             }},
             {"category", [](QJsonValue value) -> bool {
-                 return Deserializer::isValidEnumValue<Category>(value);
+                return Deserializer::isValidEnumValue<Category>(value);
             }},
             {"supportType", [](QJsonValue value) -> bool {
-                 return Deserializer::isValidEnumValue<SupportType>(value);
+                return Deserializer::isValidEnumValue<SupportType>(value);
             }},
             {"personalNotes", [](QJsonValue value) -> bool {
-                 return value.isString();
+                return value.isString();
             }}
         };
 
@@ -200,7 +203,7 @@ public:
         return true;
     }
 
-    static Album fromJson(const QJsonObject& obj) {
+    static Album* fromJson(const QJsonObject& obj) {
         if (!Album::verifyInputIntegrity(obj))
             throw std::invalid_argument("Invalid Album to deserialize !");
 
@@ -214,29 +217,23 @@ public:
         SupportType supportType = Deserializer::parseEnumValue<SupportType>(obj["supportType"]);
         QString personalNotes = obj["personalNotes"].toString();
 
-        Album album;
+        Album* album = new Album;
 
-        album.setTitle(title);
-        album.setArtistName(artistName);
-        album.setCompositorName(compositorName);
-        album.setEditionYear(editionYear);
-        album.setEuroPrice(euroPrice);
-        album.setImageCover(imageCover);
-        album.setCategory(category);
-        album.setSupportType(supportType);
-        album.setPersonalNotes(personalNotes);
+        album->setTitle(title);
+        album->setArtistName(artistName);
+        album->setCompositorName(compositorName);
+        album->setEditionYear(editionYear);
+        album->setEuroPrice(euroPrice);
+        album->setImageCover(imageCover);
+        album->setCategory(category);
+        album->setSupportType(supportType);
+        album->setPersonalNotes(personalNotes);
 
-        QJsonObject songsObj = obj["songs"].toObject();
+        QJsonArray songsArr = obj["songs"].toArray();
 
-        for (auto it = songsObj.constBegin(); it != songsObj.constEnd(); it++) {
-            bool ok;
-            int index = it.key().toInt(&ok);
-
-            if (ok) {
-                Song song = Song::fromJson(it.value().toObject());
-                song.setIndex(index);
-                album.addSong(song);
-            }
+        for (auto it = songsArr.constBegin(); it != songsArr.constEnd(); it++) {
+            Song song = Song::fromJson(it->toObject());
+            album->addSong(song);
         }
 
         return album;

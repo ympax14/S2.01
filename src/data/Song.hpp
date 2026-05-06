@@ -17,8 +17,8 @@ private:
     double rating = 0.0;
 
 public:
-    Song();
-    ~Song();
+    Song() {};
+    ~Song() = default;
 
     inline void setIndex(quint16 _index) {
         this->index = _index;
@@ -68,6 +68,7 @@ public:
 
         QJsonObject obj;
 
+        obj["index"] = this->index;
         obj["title"] = this->title;
         obj["duration"] = this->duration;
         obj["rating"] = this->rating;
@@ -78,7 +79,7 @@ public:
     static bool verifyInputIntegrity(const QJsonObject &obj) {
         static std::map<QString, std::function<bool(QJsonValue)>> requiredKeys = {
             {"index", [](QJsonValue value) -> bool {
-                return Deserializer::isQuint16(value);
+                return Deserializer::isQuint8(value);
             }},
             {"title", [](QJsonValue value) -> bool {
                 return value.isString();
@@ -102,11 +103,13 @@ public:
         if (!Song::verifyInputIntegrity(obj))
             throw std::invalid_argument("Invalid Song to deserialize !");
 
+        quint8 index = obj["index"].toInt();
         QString title = obj["title"].toString();
         quint16 duration = obj["duration"].toInt();
         double rating = obj["rating"].toDouble();
 
         Song song;
+        song.setIndex(index);
         song.setTitle(title);
         song.setDuration(duration);
         song.setRating(rating);
