@@ -14,7 +14,8 @@ HEADERS += \
     ./src/NowPlayingWindow.hpp \
     ./src/utils/Deserializer.hpp \
     ./src/utils/Serializer.hpp \
-    ./src/data/Song.hpp
+    ./src/data/Song.hpp \
+    src/data/Album.hpp
 
 TRANSLATIONS += \
     ./langs/SAE-S2_01_fr_FR.ts
