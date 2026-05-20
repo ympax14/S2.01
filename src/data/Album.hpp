@@ -122,6 +122,14 @@ public:
         return personalNotes;
     }
 
+    inline const std::vector<Song>& getSongs() const {
+        return this->songs;
+    }
+
+    inline int getSongsCount() const {
+        return this->songs.size();
+    }
+
     inline void addSong(Song song) {
         this->songs.push_back(song);
     }
