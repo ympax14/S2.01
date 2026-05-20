@@ -1,6 +1,6 @@
 #include "NowPlayingWindow.hpp"
 
-#include "MasterAlbumsWidget.hpp"
+#include "./master/MasterAlbumsWidget.hpp"
 #include "DetailsWidget.hpp"
 
 #include <QMenuBar>

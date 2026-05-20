@@ -12,8 +12,8 @@
 #include <QMetaEnum>
 #include <functional>
 
-class Album : QObject {
-
+class Album : public QObject {
+    Q_OBJECT
 public:
     enum Category {
         POP,

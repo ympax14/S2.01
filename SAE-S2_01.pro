@@ -1,4 +1,4 @@
-QT += widgets
+QT += widgets network
 
 CONFIG += c++20
 
@@ -9,7 +9,10 @@ CONFIG += c++20
 SOURCES += \
     ./src/main.cpp \
     ./src/NowPlayingWindow.cpp \
-    ./includes/qt-toast/Toast.cpp
+    ./includes/qt-toast/Toast.cpp \
+    ./src/DetailsWidget.cpp \
+    ./src/master/MasterAlbumsWidget.cpp \
+    ./src/master/AlbumListWidgetItem.cpp \
 
 HEADERS += \
     ./src/NowPlayingWindow.hpp \
@@ -19,7 +22,11 @@ HEADERS += \
     ./src/data/Album.hpp \
     ./src/data/AlbumsCollection.hpp \
     ./includes/qt-toast/Toast.h \
-    ./includes/qt-toast/Enums.h
+    ./includes/qt-toast/Enums.h \
+    ./src/master/MasterAlbumsWidget.hpp \
+    ./src/master/AlbumListWidgetItem.hpp \
+    ./src/DetailsWidget.hpp \
+    ./src/utils/Network.hpp
 
 TRANSLATIONS += \
     ./langs/SAE-S2_01_fr_FR.ts
