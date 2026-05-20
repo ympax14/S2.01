@@ -1,5 +1,8 @@
 #include "NowPlayingWindow.hpp"
 
+#include "MasterAlbumsWidget.hpp"
+#include "DetailsWidget.hpp"
+
 #include <QMenuBar>
 #include <QFileDialog>
 
@@ -28,8 +31,8 @@ void NowPlayingWindow::setupWindow() {
     this->resize(NowPlayingWindow::WINDOW_WIDTH, NowPlayingWindow::WINDOW_HEIGHT);
     this->setCentralWidget(this->splitter);
 
-    this->splitter->addWidget(new QWidget()); // Côté gauche -> Albums et Sons (Master)
-    this->splitter->addWidget(new QWidget()); // Côté droit -> Informations (Details)
+    this->splitter->addWidget(new MasterAlbumsWidget()); // Côté gauche -> Albums et Sons (Master)
+    this->splitter->addWidget(new DetailsWidget()); // Côté droit -> Informations (Details)
 }
 
 void NowPlayingWindow::connectActions() {
