@@ -1,0 +1,23 @@
+{
+    "title": "Strong Persuader",
+    "artistName": "Robert Cray",
+    "compositorName": "Robert Cray",
+    "editionYear": 1986,
+    "euroPrice": 12.99,
+    "imageCover": "https://m.media-amazon.com/images/I/51RFOrQt9tL._SY300_SX300_QL70_FMwebp_.jpg",
+    "category": "BLUES",
+    "supportType": "MP3",
+    "personalNotes": "Album blues emblématique des années 80, Grammy Award du meilleur album de blues.",
+    "songs": [
+        {"index": 1, "title": "Smoking Gun", "duration": 247, "rating": 5.0},
+        {"index": 2, "title": "I Guess I Showed Her", "duration": 198, "rating": 4.0},
+        {"index": 3, "title": "Right Next Door (Because of Me)", "duration": 318, "rating": 4.5},
+        {"index": 4, "title": "Nothin' But a Woman", "duration": 233, "rating": 4.0},
+        {"index": 5, "title": "Still Around", "duration": 242, "rating": 4.0},
+        {"index": 6, "title": "More Than I Can Stand", "duration": 213, "rating": 4.0},
+        {"index": 7, "title": "The Forecast (Calls for Pain)", "duration": 303, "rating": 4.5},
+        {"index": 8, "title": "I Wonder", "duration": 265, "rating": 4.0},
+        {"index": 9, "title": "False Accusations", "duration": 248, "rating": 4.5},
+        {"index": 10, "title": "Foul Play", "duration": 188, "rating": 4.0}
+    ]
+}

@@ -5,13 +5,13 @@
 #include <QTranslator>
 
 void loadTranslations(QApplication &a) {
-    QTranslator translator;
+    QTranslator* translator = new QTranslator;
 
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
         const QString baseName = "SAE-S2_01_" + QLocale(locale).name();
-        if (translator.load(":/i18n/" + baseName)) {
-            a.installTranslator(&translator);
+        if (translator->load(":/i18n/" + baseName)) {
+            a.installTranslator(translator);
             break;
         }
     }

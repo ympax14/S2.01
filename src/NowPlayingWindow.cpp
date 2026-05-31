@@ -1,8 +1,5 @@
 #include "NowPlayingWindow.hpp"
 
-#include "./master/MasterAlbumsWidget.hpp"
-#include "DetailsWidget.hpp"
-
 #include <QMenuBar>
 #include <QFileDialog>
 
@@ -14,11 +11,12 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
 
     openMenu(this->menuBar()->addMenu("&Open")),
     openAlbumsCollectionAction(this->openMenu->addAction(tr("&Albums Collection"))),
-    openAlbumAction(this->openMenu->addAction(tr("&Album"))),
 
-    saveMenu(this->menuBar()->addMenu("&Open")),
+    saveMenu(this->menuBar()->addMenu("&Save")),
     saveAlbumsCollectionAction(this->saveMenu->addAction(tr("&Albums Collection"))),
-    saveAlbumAction(this->saveMenu->addAction(tr("&Album"))),
+
+    masterAlbumsWidget(new MasterAlbumsWidget),
+    detailsWidget(new DetailsWidget),
 
     splitter(new QSplitter(Qt::Horizontal, this)),
     mainLayout(new QHBoxLayout(this->splitter))
@@ -31,31 +29,129 @@ void NowPlayingWindow::setupWindow() {
     this->resize(NowPlayingWindow::WINDOW_WIDTH, NowPlayingWindow::WINDOW_HEIGHT);
     this->setCentralWidget(this->splitter);
 
-    this->splitter->addWidget(new MasterAlbumsWidget()); // Côté gauche -> Albums et Sons (Master)
-    this->splitter->addWidget(new DetailsWidget()); // Côté droit -> Informations (Details)
+    this->detailsWidget->hide();
+
+    this->splitter->addWidget(this->masterAlbumsWidget); // Côté gauche -> Albums et Sons (Master)
+    this->splitter->addWidget(this->detailsWidget); // Côté droit -> Informations (Details)
 }
 
 void NowPlayingWindow::connectActions() {
     QObject::connect(this->openAlbumsCollectionAction, &QAction::triggered, this, &NowPlayingWindow::loadAlbumsCollection);
     QObject::connect(this->saveAlbumsCollectionAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbumsCollection);
-    QObject::connect(this->openAlbumAction, &QAction::triggered, this, &NowPlayingWindow::loadAlbum);
-    QObject::connect(this->saveAlbumAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbum);
+
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::addAlbumRequested, this, &NowPlayingWindow::loadAlbum);
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::removeAlbumRequested, this, &NowPlayingWindow::removeAlbum);
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::saveAlbumRequested, this, &NowPlayingWindow::saveAlbum);
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::newAlbumRequested, this, &NowPlayingWindow::newAlbum);
+
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::newSongRequested, this, &NowPlayingWindow::newSong);
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::removeSongRequested, this, &NowPlayingWindow::removeSong);
+
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::albumSelected, this, &NowPlayingWindow::albumSelected);
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::songSelected, this, &NowPlayingWindow::songSelected);
+
+    QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::filterChanged, this, &NowPlayingWindow::filterChanged);
+
+    QObject::connect(this->detailsWidget, &DetailsWidget::dataChanged, this, [this]() {
+        this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+    });
+}
+
+void NowPlayingWindow::albumSelected(size_t index) {
+    this->detailsWidget->show();
+
+    Album *album = this->albumsCollection.getAlbum(index);
+    this->detailsWidget->buildAlbumDetails(album);
+}
+
+void NowPlayingWindow::songSelected(size_t albumIndex, size_t songIndex) {
+    this->detailsWidget->show();
+
+    Album *album = this->albumsCollection.getAlbum(albumIndex);
+    this->detailsWidget->buildSongDetails(album, songIndex);
+}
+
+void NowPlayingWindow::filterChanged(const QString& text) const {
+    this->masterAlbumsWidget->refresh(this->getAlbumsCollection(), text);
 }
 
 void NowPlayingWindow::loadAlbumsCollection() {
+    QString filePath = QFileDialog::getOpenFileName(this, tr("Open AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.json)");
 
+    if (!filePath.isEmpty()) {
+        QJsonObject obj = Deserializer::loadJson(filePath);
+
+        try {
+            AlbumsCollection albumsColl = AlbumsCollection::fromJson(obj);
+
+            this->albumsCollection = albumsColl;
+            this->masterAlbumsWidget->refresh(this->albumsCollection);
+        } catch (std::invalid_argument& exception) {
+            this->errorToast(tr("Error while loading AlbumsCollection !"), tr("Invalid collection file !"));
+            qDebug() << "Invalid collection file " + filePath;
+        }
+    }
+}
+
+void NowPlayingWindow::newSong(size_t albumIndex) {
+    Album *album = this->albumsCollection.getAlbum(albumIndex);
+
+    Song song;
+    if (album->getSongsCount() > 0)
+        song.setIndex(album->getSong(album->getSongsCount() - 1).getIndex() + 1);
+    else
+        song.setIndex(1);
+
+    album->addSong(song);
+    this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+}
+
+void NowPlayingWindow::removeSong(size_t albumIndex, size_t songIndex) {
+    Album *album = this->albumsCollection.getAlbum(albumIndex);
+    album->removeSong(songIndex);
+    this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
 }
 
 void NowPlayingWindow::saveAlbumsCollection() {
+    QString filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.json)");
 
+    if (!filePath.isEmpty()) {
+        if (!filePath.contains(".json"))
+            filePath.append(".json");
+
+        QJsonObject jsonObj = this->albumsCollection.toJson();
+        Serializer::saveData(filePath, jsonObj);
+    }
 }
 
-void NowPlayingWindow::saveAlbum() {
+void NowPlayingWindow::newAlbum() {
+    this->albumsCollection.addAlbum(new Album);
+    this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+}
 
+void NowPlayingWindow::saveAlbum(size_t realIndex) {
+    QString filePath = QFileDialog::getSaveFileName(this, tr("Save Album"), QDir::homePath(), "Album (*.json)");
+
+    if (!filePath.isEmpty()) {
+        if (!filePath.contains(".json"))
+            filePath.append(".json");
+
+        Album* album = this->albumsCollection.getAlbum(realIndex);
+        QJsonObject jsonObj = album->toJson();
+        Serializer::saveData(filePath, jsonObj);
+    }
+}
+
+void NowPlayingWindow::removeAlbum(size_t index) {
+    if (index >= this->albumsCollection.getSize())
+        throw std::out_of_range("L'index spécifié n'existe pas");
+
+    this->albumsCollection.removeAlbum(index);
+    this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
 }
 
 void NowPlayingWindow::loadAlbum() {
-    QString filePath = QFileDialog::getOpenFileName(this, tr("Open album"), QDir::homePath(), tr("Album (*.json)"));
+    QString filePath = QFileDialog::getOpenFileName(this, tr("Open album"), QDir::homePath(), "Album (*.json)");
 
     if (!filePath.isEmpty()) {
         QJsonObject obj = Deserializer::loadJson(filePath);
@@ -65,6 +161,7 @@ void NowPlayingWindow::loadAlbum() {
 
             try {
                 this->albumsCollection.addAlbum(album);
+                this->masterAlbumsWidget->refresh(this->albumsCollection);
             } catch (std::invalid_argument& exception) {
                 this->errorToast(tr("Error while loading Album !"), tr("This album is already loaded !"));
                 qDebug() << "AlbumsCollection already contains this Album";
@@ -95,5 +192,5 @@ void NowPlayingWindow::errorToast(const QString& title, const QString& descripti
 }
 
 void NowPlayingWindow::successToast(const QString& title, const QString& description, int duration) {
-    this->toast(title, description, ToastPreset::ERROR, duration);
+    this->toast(title, description, ToastPreset::SUCCESS, duration);
 }

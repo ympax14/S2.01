@@ -11,8 +11,7 @@ SOURCES += \
     ./src/NowPlayingWindow.cpp \
     ./includes/qt-toast/Toast.cpp \
     ./src/DetailsWidget.cpp \
-    ./src/master/MasterAlbumsWidget.cpp \
-    ./src/master/AlbumListWidgetItem.cpp \
+    ./src/MasterAlbumsWidget.cpp
 
 HEADERS += \
     ./src/NowPlayingWindow.hpp \
@@ -23,8 +22,7 @@ HEADERS += \
     ./src/data/AlbumsCollection.hpp \
     ./includes/qt-toast/Toast.h \
     ./includes/qt-toast/Enums.h \
-    ./src/master/MasterAlbumsWidget.hpp \
-    ./src/master/AlbumListWidgetItem.hpp \
+    ./src/MasterAlbumsWidget.hpp \
     ./src/DetailsWidget.hpp \
     ./src/utils/Network.hpp
 

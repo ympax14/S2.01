@@ -6,6 +6,7 @@
 #include <QFormLayout>
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QTextEdit>
 
 #include "./data/Album.hpp"
 
@@ -18,18 +19,20 @@ public:
 private:
     QVBoxLayout * const mainLayout;
     QFormLayout * const informationsLayout;
+    QTextEdit * const notesEdit;
 
     QGraphicsScene * const imageScene;
     QGraphicsView * const imageView;
 
     void loadImage(const QString& path);
-    void updateImageView();
+    void clearImage();
 
+signals:
+    void dataChanged();
+
+public:
     void buildAlbumDetails(Album * album);
-    void buildSongDetails(Song * song);
-public slots:
-    void onAlbumSelection(Album* album);
-    void onSongSelection(Song* song);
+    void buildSongDetails(Album * const album, size_t songIndex);
 };
 
 #endif // DETAILSWIDGET_HPP

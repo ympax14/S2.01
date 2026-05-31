@@ -1,0 +1,26 @@
+{
+    "title": "Random Access Memories",
+    "artistName": "Daft Punk",
+    "compositorName": "Thomas Bangalter",
+    "editionYear": 2013,
+    "euroPrice": 16.99,
+    "imageCover": "https://groundzero.fr/wp-content/uploads/2023/02/daft-punk-random-access-memories-anniversary-edition-1677082645.jpeg",
+    "category": "ELECTRO",
+    "supportType": "CD",
+    "personalNotes": "Un retour aux sources analogiques pour les maîtres de l'électro française. Grammy Album of the Year 2014.",
+    "songs": [
+        {"index": 1, "title": "Give Life Back to Music", "duration": 274, "rating": 4.5},
+        {"index": 2, "title": "The Game of Love", "duration": 230, "rating": 4.0},
+        {"index": 3, "title": "Giorgio by Moroder", "duration": 549, "rating": 4.5},
+        {"index": 4, "title": "Within", "duration": 228, "rating": 4.0},
+        {"index": 5, "title": "Instant Crush", "duration": 337, "rating": 4.5},
+        {"index": 6, "title": "Lose Yourself to Dance", "duration": 345, "rating": 4.5},
+        {"index": 7, "title": "Touch", "duration": 498, "rating": 4.5},
+        {"index": 8, "title": "Get Lucky", "duration": 369, "rating": 5.0},
+        {"index": 9, "title": "Beyond", "duration": 279, "rating": 4.0},
+        {"index": 10, "title": "Motherboard", "duration": 334, "rating": 4.0},
+        {"index": 11, "title": "Fragments of Time", "duration": 290, "rating": 4.0},
+        {"index": 12, "title": "Doin' it Right", "duration": 296, "rating": 4.0},
+        {"index": 13, "title": "Contact", "duration": 401, "rating": 4.5}
+    ]
+}

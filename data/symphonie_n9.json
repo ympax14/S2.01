@@ -1,0 +1,17 @@
+{
+    "title": "Symphonie n°9",
+    "artistName": "Orchestre Philharmonique de Berlin",
+    "compositorName": "Ludwig van Beethoven",
+    "editionYear": 2000,
+    "euroPrice": 18.99,
+    "imageCover": "https://m.media-amazon.com/images/I/61IGdMd5fpL._SL1010_.jpg",
+    "category": "CLASSIC",
+    "supportType": "FLAC",
+    "personalNotes": "La plus grande symphonie jamais composée, direction Herbert von Karajan.",
+    "songs": [
+        {"index": 1, "title": "I. Allegro ma non troppo, un poco maestoso", "duration": 1440, "rating": 5.0},
+        {"index": 2, "title": "II. Molto vivace", "duration": 1080, "rating": 4.5},
+        {"index": 3, "title": "III. Adagio molto e cantabile", "duration": 1320, "rating": 5.0},
+        {"index": 4, "title": "IV. Presto - Allegro assai - Ode à la joie", "duration": 1500, "rating": 5.0}
+    ]
+}

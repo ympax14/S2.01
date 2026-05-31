@@ -1,0 +1,20 @@
+{
+    "title": "Histoire de Melody Nelson",
+    "artistName": "Serge Gainsbourg",
+    "compositorName": "Serge Gainsbourg",
+    "editionYear": 1971,
+    "euroPrice": 21.99,
+    "imageCover": "https://i.discogs.com/MAo2IomIiOLAybsvIPIW2vOcYeAayvS99a-ivleoIgo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/NTMtMTQ3NzgzNDE3/Ny0yMDQyLmpwZWc.jpeg",
+    "category": "FRENCH",
+    "supportType": "K7",
+    "personalNotes": "Un concept album français, poétique et cinématographique. Orchestration de Jean-Claude Vannier.",
+    "songs": [
+        {"index": 1, "title": "Melody", "duration": 212, "rating": 4.5},
+        {"index": 2, "title": "Ballade de Melody Nelson", "duration": 205, "rating": 5.0},
+        {"index": 3, "title": "Valse de Melody", "duration": 156, "rating": 4.5},
+        {"index": 4, "title": "Ah! Melody", "duration": 183, "rating": 4.0},
+        {"index": 5, "title": "L'Hotel particulier", "duration": 226, "rating": 4.5},
+        {"index": 6, "title": "En Melody", "duration": 192, "rating": 4.0},
+        {"index": 7, "title": "Cargo Culte", "duration": 286, "rating": 4.5}
+    ]
+}

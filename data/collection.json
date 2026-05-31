@@ -1,0 +1,182 @@
+{
+    "albums": [
+        {
+            "title": "The Dark Side of the Moon",
+            "artistName": "Pink Floyd",
+            "compositorName": "Roger Waters",
+            "editionYear": 1973,
+            "euroPrice": 24.99,
+            "imageCover": "https://wallpapercave.com/wp/UQMnSUk.jpg",
+            "category": "ROCK",
+            "supportType": "LP",
+            "personalNotes": "Chef-d'œuvre du rock progressif, intemporel.",
+            "songs": [
+                {"index": 1, "title": "Speak to Me", "duration": 68, "rating": 4.0},
+                {"index": 2, "title": "Breathe", "duration": 169, "rating": 4.5},
+                {"index": 3, "title": "On the Run", "duration": 224, "rating": 4.0},
+                {"index": 4, "title": "Time", "duration": 421, "rating": 5.0},
+                {"index": 5, "title": "The Great Gig in the Sky", "duration": 284, "rating": 4.5},
+                {"index": 6, "title": "Money", "duration": 382, "rating": 5.0},
+                {"index": 7, "title": "Us and Them", "duration": 469, "rating": 4.5},
+                {"index": 8, "title": "Any Colour You Like", "duration": 205, "rating": 4.0},
+                {"index": 9, "title": "Brain Damage", "duration": 228, "rating": 4.5},
+                {"index": 10, "title": "Eclipse", "duration": 129, "rating": 4.5}
+            ]
+        },
+        {
+            "title": "Kind of Blue",
+            "artistName": "Miles Davis",
+            "compositorName": "Miles Davis",
+            "editionYear": 1959,
+            "euroPrice": 19.99,
+            "imageCover": "https://store.sonymusic.fr/cdn/shop/files/MILES_DAVIS_Kind_of_blue_0194398021911_34faa772-aa0a-4220-a7c9-427aedcaa329.jpg",
+            "category": "JAZZ",
+            "supportType": "LP",
+            "personalNotes": "L'album de jazz le plus vendu de tous les temps.",
+            "songs": [
+                {"index": 1, "title": "So What", "duration": 562, "rating": 5.0},
+                {"index": 2, "title": "Freddie Freeloader", "duration": 590, "rating": 5.0},
+                {"index": 3, "title": "Blue in Green", "duration": 337, "rating": 4.5},
+                {"index": 4, "title": "All Blues", "duration": 692, "rating": 5.0},
+                {"index": 5, "title": "Flamenco Sketches", "duration": 565, "rating": 5.0}
+            ]
+        },
+        {
+            "title": "Thriller",
+            "artistName": "Michael Jackson",
+            "compositorName": "Quincy Jones",
+            "editionYear": 1982,
+            "euroPrice": 14.99,
+            "imageCover": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+            "category": "POP",
+            "supportType": "CD",
+            "personalNotes": "L'album le plus vendu de l'histoire de la musique.",
+            "songs": [
+                {"index": 1, "title": "Wanna Be Startin' Somethin'", "duration": 363, "rating": 4.5},
+                {"index": 2, "title": "Baby Be Mine", "duration": 260, "rating": 4.0},
+                {"index": 3, "title": "The Girl Is Mine", "duration": 222, "rating": 3.5},
+                {"index": 4, "title": "Thriller", "duration": 358, "rating": 5.0},
+                {"index": 5, "title": "Beat It", "duration": 258, "rating": 5.0},
+                {"index": 6, "title": "Billie Jean", "duration": 294, "rating": 5.0},
+                {"index": 7, "title": "Human Nature", "duration": 244, "rating": 4.5},
+                {"index": 8, "title": "P.Y.T. (Pretty Young Thing)", "duration": 239, "rating": 4.0},
+                {"index": 9, "title": "The Lady in My Life", "duration": 300, "rating": 4.0}
+            ]
+        },
+        {
+            "title": "Strong Persuader",
+            "artistName": "Robert Cray",
+            "compositorName": "Robert Cray",
+            "editionYear": 1986,
+            "euroPrice": 12.99,
+            "imageCover": "https://m.media-amazon.com/images/I/51RFOrQt9tL._SY300_SX300_QL70_FMwebp_.jpg",
+            "category": "BLUES",
+            "supportType": "MP3",
+            "personalNotes": "Album blues emblématique des années 80, Grammy Award du meilleur album de blues.",
+            "songs": [
+                {"index": 1, "title": "Smoking Gun", "duration": 247, "rating": 5.0},
+                {"index": 2, "title": "I Guess I Showed Her", "duration": 198, "rating": 4.0},
+                {"index": 3, "title": "Right Next Door (Because of Me)", "duration": 318, "rating": 4.5},
+                {"index": 4, "title": "Nothin' But a Woman", "duration": 233, "rating": 4.0},
+                {"index": 5, "title": "Still Around", "duration": 242, "rating": 4.0},
+                {"index": 6, "title": "More Than I Can Stand", "duration": 213, "rating": 4.0},
+                {"index": 7, "title": "The Forecast (Calls for Pain)", "duration": 303, "rating": 4.5},
+                {"index": 8, "title": "I Wonder", "duration": 265, "rating": 4.0},
+                {"index": 9, "title": "False Accusations", "duration": 248, "rating": 4.5},
+                {"index": 10, "title": "Foul Play", "duration": 188, "rating": 4.0}
+            ]
+        },
+        {
+            "title": "To Pimp a Butterfly",
+            "artistName": "Kendrick Lamar",
+            "compositorName": "Kendrick Lamar",
+            "editionYear": 2015,
+            "euroPrice": 13.99,
+            "imageCover": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
+            "category": "RAP",
+            "supportType": "M4A",
+            "personalNotes": "Œuvre majeure du hip-hop, mêlant jazz, funk et spoken word.",
+            "songs": [
+                {"index": 1, "title": "Wesley's Theory", "duration": 257, "rating": 4.5},
+                {"index": 2, "title": "For Free? (Interlude)", "duration": 140, "rating": 4.0},
+                {"index": 3, "title": "King Kunta", "duration": 234, "rating": 4.5},
+                {"index": 4, "title": "Institutionalized", "duration": 280, "rating": 4.5},
+                {"index": 5, "title": "These Walls", "duration": 310, "rating": 4.5},
+                {"index": 6, "title": "u", "duration": 283, "rating": 4.5},
+                {"index": 7, "title": "Alright", "duration": 219, "rating": 5.0},
+                {"index": 8, "title": "For Sale? (Interlude)", "duration": 193, "rating": 4.0},
+                {"index": 9, "title": "Momma", "duration": 285, "rating": 4.5},
+                {"index": 10, "title": "Hood Politics", "duration": 276, "rating": 4.5},
+                {"index": 11, "title": "How Much a Dollar Cost", "duration": 249, "rating": 5.0},
+                {"index": 12, "title": "Complexion (A Zulu Love)", "duration": 278, "rating": 4.5},
+                {"index": 13, "title": "The Blacker the Berry", "duration": 325, "rating": 4.5},
+                {"index": 14, "title": "You Ain't Gotta Lie (Momma Said)", "duration": 245, "rating": 4.5},
+                {"index": 15, "title": "i", "duration": 341, "rating": 4.5},
+                {"index": 16, "title": "Mortal Man", "duration": 727, "rating": 4.5}
+            ]
+        },
+        {
+            "title": "Symphonie n°9",
+            "artistName": "Orchestre Philharmonique de Berlin",
+            "compositorName": "Ludwig van Beethoven",
+            "editionYear": 2000,
+            "euroPrice": 18.99,
+            "imageCover": "https://m.media-amazon.com/images/I/61IGdMd5fpL._SL1010_.jpg",
+            "category": "CLASSIC",
+            "supportType": "FLAC",
+            "personalNotes": "La plus grande symphonie jamais composée, direction Herbert von Karajan.",
+            "songs": [
+                {"index": 1, "title": "I. Allegro ma non troppo, un poco maestoso", "duration": 1440, "rating": 5.0},
+                {"index": 2, "title": "II. Molto vivace", "duration": 1080, "rating": 4.5},
+                {"index": 3, "title": "III. Adagio molto e cantabile", "duration": 1320, "rating": 5.0},
+                {"index": 4, "title": "IV. Presto - Allegro assai - Ode à la joie", "duration": 1500, "rating": 5.0}
+            ]
+        },
+        {
+            "title": "Histoire de Melody Nelson",
+            "artistName": "Serge Gainsbourg",
+            "compositorName": "Serge Gainsbourg",
+            "editionYear": 1971,
+            "euroPrice": 21.99,
+            "imageCover": "https://i.discogs.com/MAo2IomIiOLAybsvIPIW2vOcYeAayvS99a-ivleoIgo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/NTMtMTQ3NzgzNDE3/Ny0yMDQyLmpwZWc.jpeg",
+            "category": "FRENCH",
+            "supportType": "K7",
+            "personalNotes": "Un concept album français, poétique et cinématographique. Orchestration de Jean-Claude Vannier.",
+            "songs": [
+                {"index": 1, "title": "Melody", "duration": 212, "rating": 4.5},
+                {"index": 2, "title": "Ballade de Melody Nelson", "duration": 205, "rating": 5.0},
+                {"index": 3, "title": "Valse de Melody", "duration": 156, "rating": 4.5},
+                {"index": 4, "title": "Ah! Melody", "duration": 183, "rating": 4.0},
+                {"index": 5, "title": "L'Hotel particulier", "duration": 226, "rating": 4.5},
+                {"index": 6, "title": "En Melody", "duration": 192, "rating": 4.0},
+                {"index": 7, "title": "Cargo Culte", "duration": 286, "rating": 4.5}
+            ]
+        },
+        {
+            "title": "Random Access Memories",
+            "artistName": "Daft Punk",
+            "compositorName": "Thomas Bangalter",
+            "editionYear": 2013,
+            "euroPrice": 16.99,
+            "imageCover": "https://groundzero.fr/wp-content/uploads/2023/02/daft-punk-random-access-memories-anniversary-edition-1677082645.jpeg",
+            "category": "ELECTRO",
+            "supportType": "CD",
+            "personalNotes": "Un retour aux sources analogiques pour les maîtres de l'électro française. Grammy Album of the Year 2014.",
+            "songs": [
+                {"index": 1, "title": "Give Life Back to Music", "duration": 274, "rating": 4.5},
+                {"index": 2, "title": "The Game of Love", "duration": 230, "rating": 4.0},
+                {"index": 3, "title": "Giorgio by Moroder", "duration": 549, "rating": 4.5},
+                {"index": 4, "title": "Within", "duration": 228, "rating": 4.0},
+                {"index": 5, "title": "Instant Crush", "duration": 337, "rating": 4.5},
+                {"index": 6, "title": "Lose Yourself to Dance", "duration": 345, "rating": 4.5},
+                {"index": 7, "title": "Touch", "duration": 498, "rating": 4.5},
+                {"index": 8, "title": "Get Lucky", "duration": 369, "rating": 5.0},
+                {"index": 9, "title": "Beyond", "duration": 279, "rating": 4.0},
+                {"index": 10, "title": "Motherboard", "duration": 334, "rating": 4.0},
+                {"index": 11, "title": "Fragments of Time", "duration": 290, "rating": 4.0},
+                {"index": 12, "title": "Doin' it Right", "duration": 296, "rating": 4.0},
+                {"index": 13, "title": "Contact", "duration": 401, "rating": 4.5}
+            ]
+        }
+    ]
+}

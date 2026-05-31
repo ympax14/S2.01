@@ -1,0 +1,29 @@
+{
+    "title": "To Pimp a Butterfly",
+    "artistName": "Kendrick Lamar",
+    "compositorName": "Kendrick Lamar",
+    "editionYear": 2015,
+    "euroPrice": 13.99,
+    "imageCover": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
+    "category": "RAP",
+    "supportType": "M4A",
+    "personalNotes": "Œuvre majeure du hip-hop, mêlant jazz, funk et spoken word.",
+    "songs": [
+        {"index": 1, "title": "Wesley's Theory", "duration": 257, "rating": 4.5},
+        {"index": 2, "title": "For Free? (Interlude)", "duration": 140, "rating": 4.0},
+        {"index": 3, "title": "King Kunta", "duration": 234, "rating": 4.5},
+        {"index": 4, "title": "Institutionalized", "duration": 280, "rating": 4.5},
+        {"index": 5, "title": "These Walls", "duration": 310, "rating": 4.5},
+        {"index": 6, "title": "u", "duration": 283, "rating": 4.5},
+        {"index": 7, "title": "Alright", "duration": 219, "rating": 5.0},
+        {"index": 8, "title": "For Sale? (Interlude)", "duration": 193, "rating": 4.0},
+        {"index": 9, "title": "Momma", "duration": 285, "rating": 4.5},
+        {"index": 10, "title": "Hood Politics", "duration": 276, "rating": 4.5},
+        {"index": 11, "title": "How Much a Dollar Cost", "duration": 249, "rating": 5.0},
+        {"index": 12, "title": "Complexion (A Zulu Love)", "duration": 278, "rating": 4.5},
+        {"index": 13, "title": "The Blacker the Berry", "duration": 325, "rating": 4.5},
+        {"index": 14, "title": "You Ain't Gotta Lie (Momma Said)", "duration": 245, "rating": 4.5},
+        {"index": 15, "title": "i", "duration": 341, "rating": 4.5},
+        {"index": 16, "title": "Mortal Man", "duration": 727, "rating": 4.5}
+    ]
+}

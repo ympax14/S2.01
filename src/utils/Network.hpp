@@ -2,13 +2,13 @@
 #define NETWORK_HPP
 
 #include <QPixmap>
-#include <QFuture>
+#include <QEventLoop>
 
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
 
-#include <QPromise>
 #include <regex>
+#include <map>
 
 class Network {
 public:
@@ -28,32 +28,29 @@ public:
     }
 
     static QPixmap fetchImage(const QString& imageUrl) {
+        static std::map<QString, QPixmap> coverCache;
+
+        if (coverCache.contains(imageUrl))
+            return coverCache.at(imageUrl);
+
         QNetworkAccessManager networkManager;
-        QNetworkReply *reply = networkManager.get(QNetworkRequest(QUrl(imageUrl))); // GET request
-        QPromise<QPixmap> * prom = new QPromise<QPixmap>;
+        QNetworkReply *reply = networkManager.get(QNetworkRequest(QUrl(imageUrl)));
 
-        QObject::connect(reply, &QNetworkReply::finished, [reply, prom]() {
-            prom->start();
-            if (reply->error() == QNetworkReply::NoError) {
-                // Read data and load into QPixmap
-                QPixmap pixmap;
-                pixmap.loadFromData(reply->readAll());
-                prom->addResult(pixmap);
-            } else {
-                // Handle error
-                qDebug() << "Error:" << reply->errorString();
-                prom->addResult(QPixmap());
-            }
-            prom->finish();
-            // Always delete the reply to avoid memory leaks
-            reply->deleteLater();
-        });
+        QEventLoop loop;
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        loop.exec();
 
-        // Wait for the image to fetch through a Promise
-        QFuture<QPixmap> result = prom->future();
-        result.waitForFinished();
+        QPixmap pixmap;
+        if (reply->error() == QNetworkReply::NoError) {
+            pixmap.loadFromData(reply->readAll());
+        } else {
+            qDebug() << "Error fetching image:" << reply->errorString();
+        }
+        reply->deleteLater();
 
-        return result.result();
+        coverCache[imageUrl] = pixmap;
+
+        return pixmap;
     }
 };
 

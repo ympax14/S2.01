@@ -1,0 +1,18 @@
+{
+    "title": "Kind of Blue",
+    "artistName": "Miles Davis",
+    "compositorName": "Miles Davis",
+    "editionYear": 1959,
+    "euroPrice": 19.99,
+    "imageCover": "https://store.sonymusic.fr/cdn/shop/files/MILES_DAVIS_Kind_of_blue_0194398021911_34faa772-aa0a-4220-a7c9-427aedcaa329.jpg",
+    "category": "JAZZ",
+    "supportType": "LP",
+    "personalNotes": "L'album de jazz le plus vendu de tous les temps.",
+    "songs": [
+        {"index": 1, "title": "So What", "duration": 562, "rating": 5.0},
+        {"index": 2, "title": "Freddie Freeloader", "duration": 590, "rating": 5.0},
+        {"index": 3, "title": "Blue in Green", "duration": 337, "rating": 4.5},
+        {"index": 4, "title": "All Blues", "duration": 692, "rating": 5.0},
+        {"index": 5, "title": "Flamenco Sketches", "duration": 565, "rating": 5.0}
+    ]
+}

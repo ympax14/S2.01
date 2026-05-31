@@ -47,7 +47,18 @@ private:
     std::vector<Song> songs;
 
 public:
-    Album() = default;
+    Album() :
+        title("New Album"),
+        artistName("Unknown"),
+        compositorName(""),
+        personalNotes(""),
+        imageCover(""),
+        editionYear(0),
+        euroPrice(0.0),
+        category(Category::CLASSIC),
+        supportType(SupportType::CD)
+    {};
+
     Album(const Album&) = delete;
     ~Album() = default;
 
@@ -130,8 +141,27 @@ public:
         return this->songs.size();
     }
 
+    Song& getSong(size_t index) {
+        if (index >= this->songs.size())
+            throw std::out_of_range("Album doesn't contains this song");
+        return this->songs[index];
+    }
+
+    const Song& getSong(size_t index) const {
+        if (index >= this->songs.size())
+            throw std::out_of_range("Album doesn't contains this song");
+        return this->songs[index];
+    }
+
     inline void addSong(Song song) {
         this->songs.push_back(song);
+    }
+
+    void removeSong(size_t index) {
+        if (index >= this->songs.size())
+            throw std::out_of_range("Album doesn't contain this song");
+        else
+            this->songs.erase(this->songs.begin() + index);
     }
 
     bool verifyOutputIntegrity() {

@@ -1,0 +1,23 @@
+{
+    "title": "The Dark Side of the Moon",
+    "artistName": "Pink Floyd",
+    "compositorName": "Roger Waters",
+    "editionYear": 1973,
+    "euroPrice": 24.99,
+    "imageCover": "https://wallpapercave.com/wp/UQMnSUk.jpg",
+    "category": "ROCK",
+    "supportType": "LP",
+    "personalNotes": "Chef-d'œuvre du rock progressif, intemporel.",
+    "songs": [
+        {"index": 1, "title": "Speak to Me", "duration": 68, "rating": 4.0},
+        {"index": 2, "title": "Breathe", "duration": 169, "rating": 4.5},
+        {"index": 3, "title": "On the Run", "duration": 224, "rating": 4.0},
+        {"index": 4, "title": "Time", "duration": 421, "rating": 5.0},
+        {"index": 5, "title": "The Great Gig in the Sky", "duration": 284, "rating": 4.5},
+        {"index": 6, "title": "Money", "duration": 382, "rating": 5.0},
+        {"index": 7, "title": "Us and Them", "duration": 469, "rating": 4.5},
+        {"index": 8, "title": "Any Colour You Like", "duration": 205, "rating": 4.0},
+        {"index": 9, "title": "Brain Damage", "duration": 228, "rating": 4.5},
+        {"index": 10, "title": "Eclipse", "duration": 129, "rating": 4.5}
+    ]
+}

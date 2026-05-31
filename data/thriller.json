@@ -1,0 +1,22 @@
+{
+    "title": "Thriller",
+    "artistName": "Michael Jackson",
+    "compositorName": "Quincy Jones",
+    "editionYear": 1982,
+    "euroPrice": 14.99,
+    "imageCover": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+    "category": "POP",
+    "supportType": "CD",
+    "personalNotes": "L'album le plus vendu de l'histoire de la musique.",
+    "songs": [
+        {"index": 1, "title": "Wanna Be Startin' Somethin'", "duration": 363, "rating": 4.5},
+        {"index": 2, "title": "Baby Be Mine", "duration": 260, "rating": 4.0},
+        {"index": 3, "title": "The Girl Is Mine", "duration": 222, "rating": 3.5},
+        {"index": 4, "title": "Thriller", "duration": 358, "rating": 5.0},
+        {"index": 5, "title": "Beat It", "duration": 258, "rating": 5.0},
+        {"index": 6, "title": "Billie Jean", "duration": 294, "rating": 5.0},
+        {"index": 7, "title": "Human Nature", "duration": 244, "rating": 4.5},
+        {"index": 8, "title": "P.Y.T. (Pretty Young Thing)", "duration": 239, "rating": 4.0},
+        {"index": 9, "title": "The Lady in My Life", "duration": 300, "rating": 4.0}
+    ]
+}

@@ -18,8 +18,19 @@ public:
         return this->albums;
     }
 
+    inline size_t getSize() const {
+        return this->albums.size();
+    }
+
     bool containsAlbum(Album* album) {
-        return std::ranges::find(this->albums, album) != this->albums.end();
+        return album->getTitle() == "New Album" ? false : std::ranges::find(this->albums, album) != this->albums.end();
+    }
+
+    Album* getAlbum(size_t index) {
+        if (index >= this->getSize())
+            throw std::out_of_range("AlbumsCollection doesn't contains this Album");
+        else
+            return this->albums[index];
     }
 
     void addAlbum(Album* album) {
@@ -36,6 +47,13 @@ public:
             this->albums.erase(it);
         else
             throw std::invalid_argument("AlbumsCollection doesn't contains this Album");
+    }
+
+    void removeAlbum(size_t index) {
+        if (index >= this->getSize())
+            throw std::out_of_range("AlbumsCollection doesn't contains this Album");
+        else
+            this->albums.erase(this->albums.begin() + index);
     }
 
     QJsonObject toJson() {

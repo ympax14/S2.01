@@ -11,13 +11,13 @@
 
 class Song {
 private:
-    quint16 index = 0;
-    QString title = "";
-    quint16 duration = 0;
-    double rating = 0.0;
+    quint16 index;
+    QString title;
+    quint16 duration;
+    double rating;
 
 public:
-    Song() {};
+    Song() : index(0), title("New Song"), duration(0), rating(0.0) {};
     ~Song() = default;
 
     inline void setIndex(quint16 _index) {
@@ -48,6 +48,12 @@ public:
         return this->duration;
     }
 
+    QString getFormattedDuration() const {
+        int minutes = this->getDuration() / 60;
+        int seconds = this->getDuration() % 60;
+        return QString("%1:%2").arg(minutes, 2, 10, QChar('0')).arg(seconds, 2, 10, QChar('0'));
+    }
+
     inline double getRating() const {
         return this->rating;
     }
@@ -56,7 +62,7 @@ public:
         if (this->title.isNull() || this->title.isEmpty())
             return false;
 
-        if (this->rating > 1.0 || this->rating < 0.0)
+        if (this->rating > 5.0 || this->rating < 0.0)
             return false;
 
         return true;
