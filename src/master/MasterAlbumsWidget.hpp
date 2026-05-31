@@ -2,8 +2,8 @@
 #define MASTERALBUMSWIDGET_HPP
 
 #include <QObject>
-#include <QWidget>
-#include <QListWidget>
+//#include <QWidget>
+#include <QTreeWidget>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QVBoxLayout>
@@ -33,16 +33,18 @@ public:
 signals:
     void albumSelected(int realIndex); // param realIndex c'est l'index de l'album dans albums[]
     void addAlbumRequested(); // when the user clicks on the button + album, basically adds an album.
-    void removeAlbumRequested(int realIndex); // for whenever the user clicks on the button remove album.
+    void removeAlbumRequested(int realIndex); // for whenever the user clicks on the button remove album
+    void filterChanged(const QString& filter);
 private slots:
     void onSelectionChanged(); // signal for when user clicks on another album
     void onAddButtonClicked(); // signal for when user adds music
     void onRemoveButtonClicked(); // signal for when user removes music
+    void onFilterChanged(const QString& text);
 
 private:
     QLabel *labelTitle;
     QLineEdit *lineEditFilter; // research bar
-    QListWidget *listWidget;
+    QTreeWidget *treeWidget;
     QPushButton *buttonAdd;
     QPushButton *buttonRemove;
 
