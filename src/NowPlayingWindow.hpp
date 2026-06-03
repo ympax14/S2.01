@@ -6,6 +6,8 @@
 #include <QMainWindow>
 #include <QSplitter>
 #include <QHBoxLayout>
+#include <QMessageBox>
+#include <QCloseEvent>
 
 #include "MasterAlbumsWidget.hpp"
 #include "DetailsWidget.hpp"
@@ -20,7 +22,7 @@ public:
     static const int WINDOW_WIDTH, WINDOW_HEIGHT;
 
     explicit NowPlayingWindow(QWidget *parent = nullptr);
-    ~NowPlayingWindow() = default;
+    ~NowPlayingWindow();
 
 private:
     AlbumsCollection albumsCollection;
@@ -30,12 +32,16 @@ private:
 
     QMenu * const saveMenu;
     QAction * const saveAlbumsCollectionAction;
+    QAction * const saveAlbumsCollectionAsAction; // represents Save as
 
     MasterAlbumsWidget * const masterAlbumsWidget;
     DetailsWidget * const detailsWidget;
 
     QSplitter * const splitter;
     QHBoxLayout * const mainLayout;
+
+    QString currentFilePath; // saves the file's path
+    bool unsavedChanges = false; // false if there's no modifications, true if there's any changes
 public:
     inline const AlbumsCollection& getAlbumsCollection() const {
         return this->albumsCollection;
@@ -46,6 +52,7 @@ public:
 public slots:
     void loadAlbumsCollection();
     void saveAlbumsCollection();
+    void saveAlbumsCollectionAs();
 
     void loadAlbum();
     void removeAlbum(size_t index);
@@ -64,5 +71,9 @@ public slots:
     void infoToast(const QString& title, const QString& descriptions, int duration = 4000);
     void errorToast(const QString& title, const QString& descriptions, int duration = 4000);
     void successToast(const QString& title, const QString& description, int duration = 4000);
+
+protected:
+    void closeEvent(QCloseEvent *event) override ; // function for when the user tries to close the app
+
 };
 #endif // MAINWINDOW_HPP

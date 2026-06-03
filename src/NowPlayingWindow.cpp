@@ -2,6 +2,8 @@
 
 #include <QMenuBar>
 #include <QFileDialog>
+#include <QMessageBox>
+#include <QCloseEvent>
 
 const int NowPlayingWindow::WINDOW_HEIGHT = 720;
 const int NowPlayingWindow::WINDOW_WIDTH = 1280;
@@ -14,6 +16,7 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
 
     saveMenu(this->menuBar()->addMenu("&Save")),
     saveAlbumsCollectionAction(this->saveMenu->addAction(tr("&Albums Collection"))),
+     saveAlbumsCollectionAsAction(this->saveMenu->addAction(tr("&Save As..."))),
 
     masterAlbumsWidget(new MasterAlbumsWidget),
     detailsWidget(new DetailsWidget),
@@ -24,6 +27,8 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
     this->setupWindow();
     this->connectActions();
 }
+
+NowPlayingWindow::~NowPlayingWindow() {}
 
 void NowPlayingWindow::setupWindow() {
     this->resize(NowPlayingWindow::WINDOW_WIDTH, NowPlayingWindow::WINDOW_HEIGHT);
@@ -38,6 +43,7 @@ void NowPlayingWindow::setupWindow() {
 void NowPlayingWindow::connectActions() {
     QObject::connect(this->openAlbumsCollectionAction, &QAction::triggered, this, &NowPlayingWindow::loadAlbumsCollection);
     QObject::connect(this->saveAlbumsCollectionAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbumsCollection);
+    QObject::connect(this->saveAlbumsCollectionAsAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbumsCollectionAs);
 
     QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::addAlbumRequested, this, &NowPlayingWindow::loadAlbum);
     QObject::connect(this->masterAlbumsWidget, &MasterAlbumsWidget::removeAlbumRequested, this, &NowPlayingWindow::removeAlbum);
@@ -54,6 +60,7 @@ void NowPlayingWindow::connectActions() {
 
     QObject::connect(this->detailsWidget, &DetailsWidget::dataChanged, this, [this]() {
         this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+        this->unsavedChanges = true;
     });
 }
 
@@ -85,7 +92,10 @@ void NowPlayingWindow::loadAlbumsCollection() {
             AlbumsCollection albumsColl = AlbumsCollection::fromJson(obj);
 
             this->albumsCollection = albumsColl;
+            this->currentFilePath = filePath;
+            this->unsavedChanges = false;
             this->masterAlbumsWidget->refresh(this->albumsCollection);
+            this->successToast(tr("Collection Loaded"), tr("Collection loaded successfully"));
         } catch (std::invalid_argument& exception) {
             this->errorToast(tr("Error while loading AlbumsCollection !"), tr("Invalid collection file !"));
             qDebug() << "Invalid collection file " + filePath;
@@ -104,29 +114,25 @@ void NowPlayingWindow::newSong(size_t albumIndex) {
 
     album->addSong(song);
     this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+    this-> unsavedChanges = true;
+    this->infoToast(tr("New Song !"), tr("a new song has been added"));
 }
 
 void NowPlayingWindow::removeSong(size_t albumIndex, size_t songIndex) {
     Album *album = this->albumsCollection.getAlbum(albumIndex);
     album->removeSong(songIndex);
     this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+    this->unsavedChanges = true;
+    this->infoToast(tr("Song Removed"), tr(" a song has been removed."));
+
 }
 
-void NowPlayingWindow::saveAlbumsCollection() {
-    QString filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.json)");
-
-    if (!filePath.isEmpty()) {
-        if (!filePath.contains(".json"))
-            filePath.append(".json");
-
-        QJsonObject jsonObj = this->albumsCollection.toJson();
-        Serializer::saveData(filePath, jsonObj);
-    }
-}
 
 void NowPlayingWindow::newAlbum() {
     this->albumsCollection.addAlbum(new Album);
     this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+    this->unsavedChanges = true;
+    this->infoToast(tr("New Album"), tr("a new album has been added"));
 }
 
 void NowPlayingWindow::saveAlbum(size_t realIndex) {
@@ -148,6 +154,8 @@ void NowPlayingWindow::removeAlbum(size_t index) {
 
     this->albumsCollection.removeAlbum(index);
     this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
+    this->infoToast(tr("Removed"), tr("Album removed successfully !"));
+    this->unsavedChanges = true;
 }
 
 void NowPlayingWindow::loadAlbum() {
@@ -172,6 +180,70 @@ void NowPlayingWindow::loadAlbum() {
         }
     }
 }
+
+void NowPlayingWindow::saveAlbumsCollection(){
+    QString filePath = this->currentFilePath;
+    //CASE 1 : no file loaded yet, ask user where to save
+    if (filePath.isEmpty()) {
+        filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.json)");
+        if (filePath.isEmpty()) return;
+        if (!filePath.endsWith(".json"))
+            filePath.append(".json");
+        this->currentFilePath = filePath; // memorizes the path for future saves
+    }
+
+    try {
+        QJsonObject jsonObj = this->albumsCollection.toJson();
+        Serializer::saveData(filePath, jsonObj);
+        unsavedChanges = false;
+        this->successToast(tr("Saved"), tr("Collection saved successfully :>"));
+        // 1 or more albums are invalid (example : empty title or artist name)
+    } catch (std::invalid_argument&) {
+        this->errorToast(tr("Save failed !!"), tr("One or more albums are invalid (probably missing title or artist?) "));
+    }
+}
+
+void NowPlayingWindow::saveAlbumsCollectionAs(){
+    QString filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection As"), QDir::homePath(), "AlbumsCollection (*.json)");
+    if (filePath.isEmpty()) return;
+
+    if (!filePath.endsWith(".json")) {
+        filePath.append(".json");
+    }
+
+    QJsonObject jsonObj = this->albumsCollection.toJson();
+    Serializer::saveData(filePath, jsonObj);
+    this->currentFilePath = filePath;
+    unsavedChanges = false;
+    this->successToast(tr("Saved As"), tr("Collection saved to new file successfully :>"));
+}
+
+void NowPlayingWindow::closeEvent(QCloseEvent *event){
+    if (unsavedChanges) {
+        int reply = QMessageBox::warning(
+            this,
+            tr("Unsaved changes"),
+            tr("You have unsaved changes. Do you perhaps want to save before quitting ?"),
+            QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
+
+        if (reply == QMessageBox::Save) {
+            saveAlbumsCollection();
+           // check if saving was successful
+            if (!unsavedChanges) {
+                event->accept();
+            } else {
+                event->ignore();
+            }
+        } else if (reply == QMessageBox::Discard) {
+            event->accept();
+        } else {
+            event->ignore();
+        }
+    } else {
+        event->accept();
+    }
+}
+
 
 void NowPlayingWindow::toast(const QString& title, const QString& description, const ToastPreset& preset, int duration) {
     Toast* toast = new Toast(this);
