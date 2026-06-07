@@ -7,6 +7,9 @@
 #include <QDoubleSpinBox>
 #include <QComboBox>
 #include <QMetaEnum>
+#include <QPushButton>
+#include <QFileDialog>
+#include <QHBoxLayout>
 
 DetailsWidget::DetailsWidget(QWidget *parent) :
     QWidget{parent},
@@ -71,6 +74,31 @@ void DetailsWidget::buildAlbumDetails(Album* album) {
     });
 
     this->informationsLayout->addRow(new QLabel(tr("Title:")), titleEdit);
+
+    // field for image url
+    QLineEdit* imageEdit = new QLineEdit(album->getImageCover());
+    imageEdit->setPlaceholderText(tr("Image URL / file path..."));
+    QObject::connect(imageEdit, &QLineEdit::textChanged, [this, album](const QString& v) {
+        album->setImageCover(v);
+        this->loadImage(v); // puts image up to date, synch
+        emit dataChanged();
+    });
+
+    // browse button to pick a local file
+    QPushButton* browseButton = new QPushButton(tr("Browse..."));
+    QObject::connect(browseButton, &QPushButton::clicked, [this, album, imageEdit]() {
+        QString filePath = QFileDialog::getOpenFileName(
+            this, tr("Select image"),
+            QDir::homePath(),tr("Images (*.png *.jpg *.jpeg *.bmp *.gif)")
+            );
+        if (!filePath.isEmpty()) { imageEdit->setText(filePath); }
+    });
+
+    QHBoxLayout* imageLayout = new QHBoxLayout;
+    imageLayout->addWidget(imageEdit);
+    imageLayout->addWidget(browseButton);
+
+    this->informationsLayout->addRow(new QLabel(tr("Image:")), imageLayout);
 
     QLineEdit* artistEdit = new QLineEdit(album->getArtistName());
 
