@@ -6,6 +6,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QMetaEnum>
+#include <QDomDocument>
 
 class Deserializer {
 public:
@@ -56,6 +57,17 @@ public:
             throw std::invalid_argument("The value isn't a part of the specified enum.");
     }
 
+    template<typename T> static T parseEnumValue(const QString& value) {
+        if (value.isEmpty())
+            throw std::invalid_argument("Specified value is null");
+
+        int val = QMetaEnum::fromType<T>().keyToValue(value.toUtf8().constData());
+        if (val != -1)
+            return static_cast<T>(val);
+        else
+            throw std::invalid_argument("The value isn't a part of the specified enum.");
+    }
+
     static QJsonObject loadJson(QString path) {
         if (path.isNull() || path.isEmpty())
             throw std::invalid_argument("Specified file path is invalid.");
@@ -68,6 +80,21 @@ public:
 
         QJsonDocument jsonDocument = QJsonDocument::fromJson(byteArray);
         return jsonDocument.object();
+    }
+
+    static QDomDocument loadXml(QString path) {
+        if (path.isNull() || path.isEmpty())
+            throw std::invalid_argument("Specified file path is invalid.");
+
+        QFile file(path);
+        if (!file.open(QIODevice::ReadOnly))
+            throw std::invalid_argument("Invalid file path to deserialize.");
+
+        QDomDocument doc;
+        doc.setContent(&file);
+        file.close();
+
+        return doc;
     }
 };
 

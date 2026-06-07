@@ -16,7 +16,12 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
 
     saveMenu(this->menuBar()->addMenu("&Save")),
     saveAlbumsCollectionAction(this->saveMenu->addAction(tr("&Albums Collection"))),
-     saveAlbumsCollectionAsAction(this->saveMenu->addAction(tr("&Save As..."))),
+    saveAlbumsCollectionAsAction(this->saveMenu->addAction(tr("&Save As..."))),
+
+    addAlbumFromFileAction(this->openMenu->addAction(tr("&Add Album from file"))),
+    openAlbumsCollectionXmlAction(this->openMenu->addAction(tr("&Albums Collection (XML)"))),
+    saveAlbumsCollectionXmlAction(this->saveMenu->addAction(tr("&Albums Collection (XML)"))),
+    saveAlbumsCollectionXmlAsAction(this->saveMenu->addAction(tr("&Save As... (XML)"))),
 
     masterAlbumsWidget(new MasterAlbumsWidget),
     detailsWidget(new DetailsWidget),
@@ -62,6 +67,11 @@ void NowPlayingWindow::connectActions() {
         this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
         this->unsavedChanges = true;
     });
+
+    QObject::connect(this->addAlbumFromFileAction, &QAction::triggered, this, &NowPlayingWindow::loadAlbum);
+    QObject::connect(this->openAlbumsCollectionXmlAction, &QAction::triggered, this, &NowPlayingWindow::loadAlbumsCollectionXml);
+    QObject::connect(this->saveAlbumsCollectionXmlAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbumsCollectionXml);
+    QObject::connect(this->saveAlbumsCollectionXmlAsAction, &QAction::triggered, this, &NowPlayingWindow::saveAlbumsCollectionXmlAs);
 }
 
 void NowPlayingWindow::albumSelected(size_t index) {
@@ -241,6 +251,65 @@ void NowPlayingWindow::closeEvent(QCloseEvent *event){
         }
     } else {
         event->accept();
+    }
+}
+
+// Charge une collection d'albums depuis fichier XML
+void NowPlayingWindow::loadAlbumsCollectionXml() {
+    QString filePath = QFileDialog::getOpenFileName(this, tr("Open AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.xml)");
+
+    if (!filePath.isEmpty()) {
+        QDomDocument doc = Deserializer::loadXml(filePath);
+
+        try {
+            AlbumsCollection albumsColl = AlbumsCollection::fromXml(doc);
+            this->albumsCollection = albumsColl;
+            this->currentFilePath = filePath;
+            this->unsavedChanges = false;
+            this->masterAlbumsWidget->refresh(this->albumsCollection);
+            this->successToast(tr("Collection Loaded"), tr("Collection loaded successfully"));
+        } catch (std::invalid_argument&) {
+            this->errorToast(tr("Error while loading the album's collection !"), tr("Invalid collection file !"));
+        }
+    }
+}
+// Sauvegarde la collection dans fichier XML actuel
+void NowPlayingWindow::saveAlbumsCollectionXml() {
+    QString filePath = this->currentFilePath;
+
+    if (filePath.isEmpty() || filePath.endsWith(".json")) {
+        filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection"), QDir::homePath(), "AlbumsCollection (*.xml)");
+        if (filePath.isEmpty()) return;
+        if (!filePath.endsWith(".xml"))
+            filePath.append(".xml");
+        this->currentFilePath = filePath;
+    }
+
+    try {
+        QDomDocument doc = this->albumsCollection.toXml();
+        Serializer::saveData(filePath, doc);
+        unsavedChanges = false;
+        this->successToast(tr("Saved"), tr("Collection saved successfully :>"));
+    } catch (std::invalid_argument&) {
+        this->errorToast(tr("Save failed !!"), tr("One or more albums are invalid !"));
+    }
+}
+
+// Sauvegarde la collection mais dans un un nouveau fichier XML
+void NowPlayingWindow::saveAlbumsCollectionXmlAs() {
+    QString filePath = QFileDialog::getSaveFileName(this, tr("Save Collection As"), QDir::homePath(), "Collection (*.xml)");
+    if (filePath.isEmpty()) return;
+    if (!filePath.endsWith(".xml"))
+        filePath.append(".xml");
+    try {
+        QDomDocument doc = this->albumsCollection.toXml();
+        Serializer::saveData(filePath, doc);
+        this->currentFilePath = filePath;
+        unsavedChanges = false;
+        this->successToast(tr("Saved As"), tr("Collection saved to new file successfully :>"));
+
+    } catch (std::invalid_argument&) {
+        this->errorToast(tr("Save failed !!"), tr("One or more albums are invalid !"));
     }
 }
 

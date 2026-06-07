@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <algorithm>
+#include <QDomDocument>
 
 struct AlbumsCollection {
 private:
@@ -69,6 +70,20 @@ public:
         return obj;
     }
 
+    QDomDocument toXml() {
+        QDomDocument doc;
+
+        QDomElement root = doc.createElement("AlbumsCollection");
+        doc.appendChild(root);
+
+        //  permet l'ajout de chaque album dans le XML
+        for (auto album : albums)
+            root.appendChild(album->toXml(doc));
+
+        return doc;
+
+    }
+
     static AlbumsCollection fromJson(const QJsonObject& obj) {
         if (!obj.contains("albums") || !obj["albums"].isArray())
             throw std::invalid_argument("Invalid AlbumsCollection to deserialize");
@@ -79,6 +94,22 @@ public:
 
         for (auto it = albumsArr.constBegin(); it != albumsArr.constEnd(); it++)
             collection.addAlbum(Album::fromJson(it->toObject()));
+
+        return collection;
+    }
+
+    static AlbumsCollection fromXml(const QDomDocument& doc) {
+        // Récupère la racine <AlbumsCollection>
+        QDomElement root = doc.documentElement();
+
+        if (root.isNull())
+            throw std::invalid_argument("Invalid AlbumsCollection to deserialize");
+
+        AlbumsCollection collection;
+
+        QDomNodeList albumNodes = root.elementsByTagName("album");
+        for (int i = 0; i < albumNodes.count(); i++)
+            collection.addAlbum(Album::fromXml(albumNodes.at(i).toElement()));
 
         return collection;
     }

@@ -1,4 +1,5 @@
 QT += widgets network
+QT += core gui widgets xml
 
 CONFIG += c++20
 

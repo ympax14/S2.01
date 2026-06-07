@@ -42,6 +42,13 @@ private:
 
     QString currentFilePath; // saves the file's path
     bool unsavedChanges = false; // false if there's no modifications, true if there's any changes
+
+    QAction * const addAlbumFromFileAction;
+
+    QAction * const openAlbumsCollectionXmlAction;
+    QAction * const saveAlbumsCollectionXmlAction;
+
+    QAction * const saveAlbumsCollectionXmlAsAction;
 public:
     inline const AlbumsCollection& getAlbumsCollection() const {
         return this->albumsCollection;
@@ -71,6 +78,10 @@ public slots:
     void infoToast(const QString& title, const QString& descriptions, int duration = 4000);
     void errorToast(const QString& title, const QString& descriptions, int duration = 4000);
     void successToast(const QString& title, const QString& description, int duration = 4000);
+
+    void loadAlbumsCollectionXml();
+    void saveAlbumsCollectionXml();
+    void saveAlbumsCollectionXmlAs();
 
 protected:
     void closeEvent(QCloseEvent *event) override ; // function for when the user tries to close the app

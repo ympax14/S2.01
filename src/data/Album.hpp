@@ -11,6 +11,8 @@
 #include <QJsonArray>
 #include <QMetaEnum>
 #include <functional>
+#include <QDomDocument>
+#include <QDomElement>
 
 class Album : public QObject {
     Q_OBJECT
@@ -203,6 +205,57 @@ public:
         return obj;
     }
 
+    QDomElement toXml(QDomDocument& doc) {
+        if (!verifyOutputIntegrity())
+            throw std::invalid_argument("Invalid Album to serialize !");
+
+        QDomElement album = doc.createElement("album");
+
+        QDomElement titleElem = doc.createElement("title");
+        titleElem.appendChild(doc.createTextNode(this->title));
+        album.appendChild(titleElem);
+
+        QDomElement artistElem = doc.createElement("artistName");
+        artistElem.appendChild(doc.createTextNode(this->artistName));
+        album.appendChild(artistElem);
+
+        QDomElement compositorElem = doc.createElement("compositorName");
+        compositorElem.appendChild(doc.createTextNode(this->compositorName));
+        album.appendChild(compositorElem);
+
+        QDomElement yearElem = doc.createElement("editionYear");
+        yearElem.appendChild(doc.createTextNode(QString::number(this->editionYear)));
+        album.appendChild(yearElem);
+
+        QDomElement priceElem = doc.createElement("euroPrice");
+        priceElem.appendChild(doc.createTextNode(QString::number(this->euroPrice)));
+        album.appendChild(priceElem);
+
+        QDomElement imageElem = doc.createElement("imageCover");
+        imageElem.appendChild(doc.createTextNode(this->imageCover));
+        album.appendChild(imageElem);
+
+        QDomElement categoryElem = doc.createElement("category");
+        categoryElem.appendChild(doc.createTextNode(Serializer::serializeEnumValue(this->category)));
+        album.appendChild(categoryElem);
+
+        QDomElement supportElem = doc.createElement("supportType");
+        supportElem.appendChild(doc.createTextNode(Serializer::serializeEnumValue(this->supportType)));
+        album.appendChild(supportElem);
+
+        QDomElement notesElem = doc.createElement("personalNotes");
+        notesElem.appendChild(doc.createTextNode(this->personalNotes));
+        album.appendChild(notesElem);
+
+        QDomElement songsElem = doc.createElement("songs");
+        for (const Song& song : this->songs)
+            songsElem.appendChild(song.toXml(doc));
+        album.appendChild(songsElem);
+
+        return album;
+
+    }
+
     static bool verifyInputIntegrity(const QJsonObject &obj) {
         static std::map<QString, std::function<bool(QJsonValue)>> requiredKeys = {
             {"title", [](QJsonValue value) -> bool {
@@ -273,6 +326,31 @@ public:
             Song song = Song::fromJson(it->toObject());
             album->addSong(song);
         }
+
+        return album;
+    }
+
+    static Album* fromXml(const QDomElement& elem) {
+        if (elem.isNull())
+            throw std::invalid_argument("Invalid Album to deserialize !");
+
+        Album* album = new Album;
+
+        album->setTitle(elem.firstChildElement("title").text());
+        album->setArtistName(elem.firstChildElement("artistName").text());
+        album->setCompositorName(elem.firstChildElement("compositorName").text());
+        album->setEditionYear(elem.firstChildElement("editionYear").text().toUShort());
+        album->setEuroPrice(elem.firstChildElement("euroPrice").text().toDouble());
+        album->setImageCover(elem.firstChildElement("imageCover").text());
+        album->setCategory(Deserializer::parseEnumValue<Category>(elem.firstChildElement("category").text()));
+        album->setSupportType(Deserializer::parseEnumValue<SupportType>(elem.firstChildElement("supportType").text()));
+        album->setPersonalNotes(elem.firstChildElement("personalNotes").text());
+
+
+        QDomNodeList songNodes = elem.firstChildElement("songs").childNodes();
+
+        for (int i = 0; i < songNodes.count(); i++)
+            album->addSong(Song::fromXml(songNodes.at(i).toElement()));
 
         return album;
     }

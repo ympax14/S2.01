@@ -1,0 +1,1322 @@
+<AlbumsCollection>
+    <album>
+        <title>The Dark Side of the Moon</title>
+        <artistName>Pink Floyd</artistName>
+        <compositorName>Roger Waters</compositorName>
+        <editionYear>1973</editionYear>
+        <euroPrice>24.99</euroPrice>
+        <imageCover>https://wallpapercave.com/wp/UQMnSUk.jpg</imageCover>
+        <category>ROCK</category>
+        <supportType>LP</supportType>
+        <personalNotes>Chef-d'œuvre du rock progressif, intemporel.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Speak to Me</title>
+                <duration>68</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Breathe</title>
+                <duration>169</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>On the Run</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Time</title>
+                <duration>421</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>The Great Gig in the Sky</title>
+                <duration>284</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Money</title>
+                <duration>382</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Us and Them</title>
+                <duration>469</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Any Colour You Like</title>
+                <duration>205</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Brain Damage</title>
+                <duration>228</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Eclipse</title>
+                <duration>129</duration>
+                <rating>4.5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Kind of Blue</title>
+        <artistName>Miles Davis</artistName>
+        <compositorName>Miles Davis</compositorName>
+        <editionYear>1959</editionYear>
+        <euroPrice>19.99</euroPrice>
+        <imageCover>https://store.sonymusic.fr/cdn/shop/files/MILES_DAVIS_Kind_of_blue_0194398021911_34faa772-aa0a-4220-a7c9-427aedcaa329.jpg</imageCover>
+        <category>JAZZ</category>
+        <supportType>LP</supportType>
+        <personalNotes>L'album de jazz le plus vendu de tous les temps.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>So What</title>
+                <duration>562</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Freddie Freeloader</title>
+                <duration>590</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Blue in Green</title>
+                <duration>337</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>All Blues</title>
+                <duration>692</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Flamenco Sketches</title>
+                <duration>565</duration>
+                <rating>5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Thriller</title>
+        <artistName>Michael Jackson</artistName>
+        <compositorName>Quincy Jones</compositorName>
+        <editionYear>1982</editionYear>
+        <euroPrice>14.99</euroPrice>
+        <imageCover>https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png</imageCover>
+        <category>POP</category>
+        <supportType>CD</supportType>
+        <personalNotes>L'album le plus vendu de l'histoire de la musique.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Wanna Be Startin' Somethin'</title>
+                <duration>363</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Baby Be Mine</title>
+                <duration>260</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>The Girl Is Mine</title>
+                <duration>222</duration>
+                <rating>3.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Thriller</title>
+                <duration>358</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Beat It</title>
+                <duration>258</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Billie Jean</title>
+                <duration>294</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Human Nature</title>
+                <duration>244</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>P.Y.T. (Pretty Young Thing)</title>
+                <duration>239</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>The Lady in My Life</title>
+                <duration>300</duration>
+                <rating>4</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Strong Persuader</title>
+        <artistName>Robert Cray</artistName>
+        <compositorName>Robert Cray</compositorName>
+        <editionYear>1986</editionYear>
+        <euroPrice>12.99</euroPrice>
+        <imageCover>https://i.discogs.com/epZ8JVwHK6veFngDiuHIjBB16SOyiODDhBvbb1TnVWE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NTkx/OC0xNDcxMzg3NDUw/LTI0OTIuanBlZw.jpeg</imageCover>
+        <category>BLUES</category>
+        <supportType>MP3</supportType>
+        <personalNotes>Album blues emblématique des années 80, Grammy Award du meilleur album de blues.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Smoking Gun</title>
+                <duration>247</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>I Guess I Showed Her</title>
+                <duration>198</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Right Next Door (Because of Me)</title>
+                <duration>318</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Nothin' But a Woman</title>
+                <duration>233</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Still Around</title>
+                <duration>242</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>More Than I Can Stand</title>
+                <duration>213</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>The Forecast (Calls for Pain)</title>
+                <duration>303</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>I Wonder</title>
+                <duration>265</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>False Accusations</title>
+                <duration>248</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Foul Play</title>
+                <duration>188</duration>
+                <rating>4</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>To Pimp a Butterfly</title>
+        <artistName>Kendrick Lamar</artistName>
+        <compositorName>Kendrick Lamar</compositorName>
+        <editionYear>2015</editionYear>
+        <euroPrice>13.99</euroPrice>
+        <imageCover>https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png</imageCover>
+        <category>RAP</category>
+        <supportType>M4A</supportType>
+        <personalNotes>Œuvre majeure du hip-hop, mêlant jazz, funk et spoken word.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Wesley's Theory</title>
+                <duration>257</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>For Free? (Interlude)</title>
+                <duration>140</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>King Kunta</title>
+                <duration>234</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Institutionalized</title>
+                <duration>280</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>These Walls</title>
+                <duration>310</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>u</title>
+                <duration>283</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Alright</title>
+                <duration>219</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>For Sale? (Interlude)</title>
+                <duration>193</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Momma</title>
+                <duration>285</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Hood Politics</title>
+                <duration>276</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>How Much a Dollar Cost</title>
+                <duration>249</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>12</index>
+                <title>Complexion (A Zulu Love)</title>
+                <duration>278</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>13</index>
+                <title>The Blacker the Berry</title>
+                <duration>325</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>14</index>
+                <title>You Ain't Gotta Lie (Momma Said)</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>15</index>
+                <title>i</title>
+                <duration>341</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>16</index>
+                <title>Mortal Man</title>
+                <duration>727</duration>
+                <rating>4.5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Symphonie n°9</title>
+        <artistName>Orchestre Philharmonique de Berlin</artistName>
+        <compositorName>Ludwig van Beethoven</compositorName>
+        <editionYear>2000</editionYear>
+        <euroPrice>18.99</euroPrice>
+        <imageCover>https://m.media-amazon.com/images/I/61IGdMd5fpL._SL1010_.jpg</imageCover>
+        <category>CLASSIC</category>
+        <supportType>FLAC</supportType>
+        <personalNotes>La plus grande symphonie jamais composée, direction Herbert von Karajan.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>I. Allegro ma non troppo, un poco maestoso</title>
+                <duration>1440</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>II. Molto vivace</title>
+                <duration>1080</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>III. Adagio molto e cantabile</title>
+                <duration>1320</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>IV. Presto - Allegro assai - Ode à la joie</title>
+                <duration>1500</duration>
+                <rating>5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Histoire de Melody Nelson</title>
+        <artistName>Serge Gainsbourg</artistName>
+        <compositorName>Serge Gainsbourg</compositorName>
+        <editionYear>1971</editionYear>
+        <euroPrice>21.99</euroPrice>
+        <imageCover>https://i.discogs.com/MAo2IomIiOLAybsvIPIW2vOcYeAayvS99a-ivleoIgo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/NTMtMTQ3NzgzNDE3/Ny0yMDQyLmpwZWc.jpeg</imageCover>
+        <category>FRENCH</category>
+        <supportType>K7</supportType>
+        <personalNotes>Un concept album français, poétique et cinématographique. Orchestration de Jean-Claude Vannier.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Melody</title>
+                <duration>212</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Ballade de Melody Nelson</title>
+                <duration>205</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Valse de Melody</title>
+                <duration>156</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Ah! Melody</title>
+                <duration>183</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>L'Hotel particulier</title>
+                <duration>226</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>En Melody</title>
+                <duration>192</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Cargo Culte</title>
+                <duration>286</duration>
+                <rating>4.5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Random Access Memories</title>
+        <artistName>Daft Punk</artistName>
+        <compositorName>Thomas Bangalter</compositorName>
+        <editionYear>2013</editionYear>
+        <euroPrice>16.99</euroPrice>
+        <imageCover>https://groundzero.fr/wp-content/uploads/2023/02/daft-punk-random-access-memories-anniversary-edition-1677082645.jpeg</imageCover>
+        <category>ELECTRO</category>
+        <supportType>CD</supportType>
+        <personalNotes>Un retour aux sources analogiques pour les maîtres de l'électro française. Grammy Album of the Year 2014.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Give Life Back to Music</title>
+                <duration>274</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>The Game of Love</title>
+                <duration>230</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Giorgio by Moroder</title>
+                <duration>549</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Within</title>
+                <duration>228</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Instant Crush</title>
+                <duration>337</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Lose Yourself to Dance</title>
+                <duration>345</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Touch</title>
+                <duration>498</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Get Lucky</title>
+                <duration>369</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Beyond</title>
+                <duration>279</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Motherboard</title>
+                <duration>334</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>Fragments of Time</title>
+                <duration>290</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>12</index>
+                <title>Doin' it Right</title>
+                <duration>296</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>13</index>
+                <title>Contact</title>
+                <duration>401</duration>
+                <rating>4.5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Submarine</title>
+        <artistName>The Marias</artistName>
+        <compositorName>Josh Conway and María Zardoya</compositorName>
+        <editionYear>2024</editionYear>
+        <euroPrice>31.99</euroPrice>
+        <imageCover>https://elitarecords.com/cdn/shop/files/R-30903558-1717828856-2815.jpg?v=1738067356</imageCover>
+        <category>POP</category>
+        <supportType>CD</supportType>
+        <personalNotes>Un melange entre le plus beau des bleu et la tristesse d'un dimanche</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Ride</title>
+                <duration>72</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Hamptons</title>
+                <duration>185</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Echo</title>
+                <duration>197</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Run Your Mouth</title>
+                <duration>144</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Real Life</title>
+                <duration>196</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Blur</title>
+                <duration>207</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Paranoia</title>
+                <duration>211</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Lejos De Ti</title>
+                <duration>180</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Love You Anyway</title>
+                <duration>214</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Ay No Puedo</title>
+                <duration>181</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>No One Noticed</title>
+                <duration>214</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>12</index>
+                <title>Vicious Sensitive Robot</title>
+                <duration>129</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>13</index>
+                <title>If Only</title>
+                <duration>188</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>14</index>
+                <title>Sienna</title>
+                <duration>207</duration>
+                <rating>4.5</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Dawn</title>
+        <artistName>YEBBA</artistName>
+        <compositorName>Abbey Smith</compositorName>
+        <editionYear>2021</editionYear>
+        <euroPrice>14.99</euroPrice>
+        <imageCover>https://i.discogs.com/v86BmSEPE6eaYgK-791h1rstsc3PkrL5zBSwqG9Wpxk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTky/MTk3LTE2MzEzNTMw/NjEtOTIzMi5qcGVn.jpeg</imageCover>
+        <category>RAP</category>
+        <supportType>CD</supportType>
+        <personalNotes>Album debut de YEBBA, produit par Mark Ronson, dédié à sa mère disparue.</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>How Many Years</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Stand</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Boomerang</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>All I Ever Wanted</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Far Away</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Dawn</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>October Sky</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Louie Bag</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Distance</title>
+                <duration>231</duration>
+                <rating>0.89</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>My Mind</title>
+                <duration>300</duration>
+                <rating>0.98</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>Love Came Down</title>
+                <duration>189</duration>
+                <rating>0.84</rating>
+            </song>
+            <song>
+                <index>12</index>
+                <title>Paranoia Purple</title>
+                <duration>212</duration>
+                <rating>0.86</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Purple Rain</title>
+        <artistName>Prince And The Revolution</artistName>
+        <compositorName>Prince</compositorName>
+        <editionYear>1984</editionYear>
+        <euroPrice>20.32</euroPrice>
+        <imageCover>https://i.discogs.com/mSIjl1G4gAdx2xw9iLG1fBmNPLz_5GNo0bLqeWyDMh4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDAy/MS0xMzM1NDAwMjg5/LmpwZWc.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>LP</supportType>
+        <personalNotes>Pure nostalgia and sonder</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Let's Go Crazy</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Take Me With U</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>The Beautiful Ones</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Computer Blue</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Darling Nikki</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>When Doves Cry</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>I Would Die 4 U</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Baby I'm A Star</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>For Emma, Forever Ago</title>
+        <artistName>Bon Iver</artistName>
+        <compositorName>Justin Vernon</compositorName>
+        <editionYear>1984</editionYear>
+        <euroPrice>20.32</euroPrice>
+        <imageCover>https://i.discogs.com/PdpA5o2n31ijOV9lQFgIKqXpiAzj7IB7leNqmMoE2-M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjEw/MDctMTIxMjgwNDk3/My5qcGVn.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>LP</supportType>
+        <personalNotes>Cute before bed playlist </personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Flume</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Lump Sum</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Skinny Love</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>The Wolves (Act I and II)</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Blindsided</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Creature fear</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Team</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>For Emma</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Re:Stacks</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Back To Black</title>
+        <artistName>Amy Winehouse</artistName>
+        <compositorName>Amy Winehouse</compositorName>
+        <editionYear>2006</editionYear>
+        <euroPrice>38.7</euroPrice>
+        <imageCover>https://i.discogs.com/NdldQe0P5ktTkjDoBFm9HLE0iiQ4xlqnDR2vNQ_Z0WU/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDgw/MDktMTM5MDk5MDQ4/OS02OTc5LmpwZWc.jpeg</imageCover>
+        <category>POP</category>
+        <supportType>LP</supportType>
+        <personalNotes>Sounds like a black revenge dress but tastes like sad liquor</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Rehab</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>You Know I'm No Good</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Me &amp; Mr Jones</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Back To Black</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Love is A Losing Game</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Tears Dry On Their Own</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Wake up Alone</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Some Unholy War</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>He Can Only Hold Her</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>You Know I'm No Good</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Ultraviolence</title>
+        <artistName>Lana Del Rey</artistName>
+        <compositorName>Lana Del Rey</compositorName>
+        <editionYear>2012</editionYear>
+        <euroPrice>25.2</euroPrice>
+        <imageCover>https://i.discogs.com/TS2SBf1-Ofj_INRjxfMOAMZknOSXEWTYPGrYZoJi05Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjI0/NTcwLTE1Nzg0MTAz/MDAtMzU0My5qcGVn.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>CD</supportType>
+        <personalNotes>A never ending pain</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Cruel World</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Ultraviolence</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Shades Of Cool</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Brooklyn Baby</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>West Coast</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Sad Girl</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Pretty When You Cry</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Money Power Glory</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Fucked My Way To The Top</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Old Money</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>The Other Woman</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Samedi Soir Sur La Terre</title>
+        <artistName>Francis Cabrel</artistName>
+        <compositorName>Francis Cabrel</compositorName>
+        <editionYear>1984</editionYear>
+        <euroPrice>20.32</euroPrice>
+        <imageCover>https://i.discogs.com/rbRp9J7rIM9cwJajqWSjMBShbP1XBXOHjyanR6plTa0/rs:fit/g:sm/q:90/h:537/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NzMw/NTQtMTU5NjIzODc1/Ny04Njc2LmpwZWc.jpeg</imageCover>
+        <category>POP</category>
+        <supportType>LP</supportType>
+        <personalNotes>I just like Cabrel's vibe</personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>La Corrida</title>
+                <duration>218</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Assis Sur Le Rebord Du Monde</title>
+                <duration>195</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>La Cabane Du Pêcheur</title>
+                <duration>203</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Samedi Soir Sur La Terre</title>
+                <duration>224</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Je T'aimais, Je T'aime, Je T'aimerai</title>
+                <duration>187</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Les Vidanges Du Diable</title>
+                <duration>210</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>L'arbre Va Tomber</title>
+                <duration>245</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Octobre</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Le Noceur</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Tôt Ou Tard S'en Aller</title>
+                <duration>178</duration>
+                <rating>0.8</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>The Smiths</title>
+        <artistName>The Smiths</artistName>
+        <compositorName>The Smiths </compositorName>
+        <editionYear>1984</editionYear>
+        <euroPrice>999</euroPrice>
+        <imageCover>https://i.discogs.com/Iap-1vWJ0MIJx7rx6V_CpMo-om6Z6ibBO8LuGgrPRTA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTcw/OTYtMTU4MDI1NDk5/Ny01ODgzLmpwZWc.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>LP</supportType>
+        <personalNotes></personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Reel Around The Fountain</title>
+                <duration>330</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>You've Got Everything Now</title>
+                <duration>290</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Miserable Lie</title>
+                <duration>250</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Pretty Girls Make Graves.ft  Annalisa Jablonska</title>
+                <duration>260</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>The Hand That Rocks The Cradle</title>
+                <duration>300</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Still Ill</title>
+                <duration>310</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Hand In Glove</title>
+                <duration>260</duration>
+                <rating>4.5</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>What Difference Does It Make?</title>
+                <duration>300</duration>
+                <rating>4</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>I Don't Owe You Anything</title>
+                <duration>330</duration>
+                <rating>5</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Suffer Little Children</title>
+                <duration>329</duration>
+                <rating>0</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Nevermind</title>
+        <artistName>Nirvana</artistName>
+        <compositorName>Nirvana</compositorName>
+        <editionYear>1991</editionYear>
+        <euroPrice>30</euroPrice>
+        <imageCover>https://i.discogs.com/os3Gm61mroiZvEw2bIGtNDf0RXydEx8PRmIk-YYwBSU/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>FLAC</supportType>
+        <personalNotes>Cool gift for a nirvana supreme fan </personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>Smells Like Teen Spirit</title>
+                <duration>300</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>In Bloom</title>
+                <duration>253</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Come As You Are</title>
+                <duration>198</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Breed</title>
+                <duration>260</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>Lithium</title>
+                <duration>240</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Polly</title>
+                <duration>200</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Territorial Pissings</title>
+                <duration>180</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Drain You</title>
+                <duration>210</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Lounge Act</title>
+                <duration>254</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Stay Away</title>
+                <duration>250</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>On A Plain</title>
+                <duration>0</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>12</index>
+                <title>Something In The Way</title>
+                <duration>223</duration>
+                <rating>0</rating>
+            </song>
+        </songs>
+    </album>
+    <album>
+        <title>Wiped Out! </title>
+        <artistName>The Neighbourhood</artistName>
+        <compositorName>The Neighbourhood</compositorName>
+        <editionYear>2015</editionYear>
+        <euroPrice>36</euroPrice>
+        <imageCover>https://i.discogs.com/SxDsNmKcPa9qkJdBIxMbDIWEqfvBzQbuRnXAMLWZLPM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNTc3/ODEtMTQ1ODEwMjA0/Ny0xNDk1LmpwZWc.jpeg</imageCover>
+        <category>ROCK</category>
+        <supportType>LP</supportType>
+        <personalNotes></personalNotes>
+        <songs>
+            <song>
+                <index>1</index>
+                <title>A Moment Of Silence</title>
+                <duration>30</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>2</index>
+                <title>Prey</title>
+                <duration>320</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>3</index>
+                <title>Cry Baby</title>
+                <duration>280</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>4</index>
+                <title>Wiped Out!</title>
+                <duration>370</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>5</index>
+                <title>The Beach</title>
+                <duration>270</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>6</index>
+                <title>Daddy Issues</title>
+                <duration>370</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>7</index>
+                <title>Baby Came Home 2 / Valentines</title>
+                <duration>390</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>8</index>
+                <title>Greetings From Califournia</title>
+                <duration>370</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>9</index>
+                <title>Ferrari</title>
+                <duration>240</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>10</index>
+                <title>Single</title>
+                <duration>346</duration>
+                <rating>0</rating>
+            </song>
+            <song>
+                <index>11</index>
+                <title>R.I.P. 2 My Youth</title>
+                <duration>205</duration>
+                <rating>0</rating>
+            </song>
+        </songs>
+    </album>
+</AlbumsCollection>

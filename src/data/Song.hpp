@@ -8,6 +8,8 @@
 #include <QJsonObject>
 #include <functional>
 #include <map>
+#include <QDomDocument>
+#include <QDomElement>
 
 class Song {
 private:
@@ -82,6 +84,34 @@ public:
         return obj;
     }
 
+    QDomElement toXml(QDomDocument& doc) const {
+        if (!this->verifyOutputIntegrity())
+            throw std::invalid_argument("Invalid Song to serialize !");
+
+        // Créer la balise <song> qui contiendra tout les champs suivants
+        QDomElement song = doc.createElement("song");
+
+        // <index>valeur</index> et l'ajoute dans <song>
+        QDomElement indexElem = doc.createElement("index");
+        indexElem.appendChild(doc.createTextNode(QString::number(this->index)));
+        song.appendChild(indexElem);
+
+        QDomElement titleElem = doc.createElement("title");
+        titleElem.appendChild(doc.createTextNode(this->title));
+        song.appendChild(titleElem);
+
+        QDomElement durationElem = doc.createElement("duration");
+        durationElem.appendChild(doc.createTextNode(QString::number(this->duration)));
+        song.appendChild(durationElem);
+
+        QDomElement ratingElem = doc.createElement("rating");
+        ratingElem.appendChild(doc.createTextNode(QString::number(this->rating)));
+        song.appendChild(ratingElem);
+
+        return song;
+
+    }
+
     static bool verifyInputIntegrity(const QJsonObject &obj) {
         static std::map<QString, std::function<bool(QJsonValue)>> requiredKeys = {
             {"index", [](QJsonValue value) -> bool {
@@ -119,6 +149,25 @@ public:
         song.setTitle(title);
         song.setDuration(duration);
         song.setRating(rating);
+
+        return song;
+    }
+
+    // fonction qui reconstruit un objet Song C++ à partir d'un fichier XML
+    static Song fromXml(const QDomElement&  elem) {
+        if (elem.isNull())
+            throw std::invalid_argument("Invalid Song to deserialize !");
+
+        Song song;
+
+        // firstChildElement("index") cherche la balise <index>
+        // .text() récupère donc le texte à l'intérieur
+        // et .toInt() convertit ce texte en nombre entier
+
+        song.setIndex(elem.firstChildElement("index").text().toInt());
+        song.setTitle(elem.firstChildElement("title").text());
+        song.setDuration(elem.firstChildElement("duration").text().toInt());
+        song.setRating(elem.firstChildElement("rating").text().toDouble());
 
         return song;
     }
