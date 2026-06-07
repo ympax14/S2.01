@@ -1,0 +1,89 @@
+{
+    "albums": [
+        {
+            "artistName": "Nirvana",
+            "category": "ROCK",
+            "compositorName": "Nirvana",
+            "editionYear": 1991,
+            "euroPrice": 30,
+            "imageCover": "https://i.discogs.com/os3Gm61mroiZvEw2bIGtNDf0RXydEx8PRmIk-YYwBSU/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg",
+            "personalNotes": "Cool gift for a nirvana supreme fan ",
+            "songs": [
+                {
+                    "duration": 300,
+                    "index": 1,
+                    "rating": 0,
+                    "title": "Smells Like Teen Spirit"
+                },
+                {
+                    "duration": 253,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "In Bloom"
+                },
+                {
+                    "duration": 198,
+                    "index": 3,
+                    "rating": 0,
+                    "title": "Come As You Are"
+                },
+                {
+                    "duration": 260,
+                    "index": 4,
+                    "rating": 0,
+                    "title": "Breed"
+                },
+                {
+                    "duration": 240,
+                    "index": 5,
+                    "rating": 0,
+                    "title": "Lithium"
+                },
+                {
+                    "duration": 200,
+                    "index": 6,
+                    "rating": 0,
+                    "title": "Polly"
+                },
+                {
+                    "duration": 180,
+                    "index": 7,
+                    "rating": 0,
+                    "title": "Territorial Pissings"
+                },
+                {
+                    "duration": 210,
+                    "index": 8,
+                    "rating": 0,
+                    "title": "Drain You"
+                },
+                {
+                    "duration": 254,
+                    "index": 9,
+                    "rating": 0,
+                    "title": "Lounge Act"
+                },
+                {
+                    "duration": 250,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Stay Away"
+                },
+                {
+                    "duration": 0,
+                    "index": 11,
+                    "rating": 0,
+                    "title": "On A Plain"
+                },
+                {
+                    "duration": 223,
+                    "index": 12,
+                    "rating": 0,
+                    "title": "Something In The Way"
+                }
+            ],
+            "supportType": "FLAC",
+            "title": "Nevermind"
+        }
+    ]
+}

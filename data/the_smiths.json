@@ -1,0 +1,162 @@
+{
+    "albums": [
+        {
+            "artistName": "The Smiths",
+            "category": "ROCK",
+            "compositorName": "The Smiths ",
+            "editionYear": 1984,
+            "euroPrice": 999,
+            "imageCover": "https://i.discogs.com/Iap-1vWJ0MIJx7rx6V_CpMo-om6Z6ibBO8LuGgrPRTA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTcw/OTYtMTU4MDI1NDk5/Ny01ODgzLmpwZWc.jpeg",
+            "personalNotes": "",
+            "songs": [
+                {
+                    "duration": 330,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Reel Around The Fountain"
+                },
+                {
+                    "duration": 290,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "You've Got Everything Now"
+                },
+                {
+                    "duration": 250,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Miserable Lie"
+                },
+                {
+                    "duration": 260,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Pretty Girls Make Graves.ft  Annalisa Jablonska"
+                },
+                {
+                    "duration": 300,
+                    "index": 5,
+                    "rating": 5,
+                    "title": "The Hand That Rocks The Cradle"
+                },
+                {
+                    "duration": 310,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Still Ill"
+                },
+                {
+                    "duration": 260,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Hand In Glove"
+                },
+                {
+                    "duration": 300,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "What Difference Does It Make?"
+                },
+                {
+                    "duration": 330,
+                    "index": 9,
+                    "rating": 5,
+                    "title": "I Don't Owe You Anything"
+                },
+                {
+                    "duration": 329,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Suffer Little Children"
+                }
+            ],
+            "supportType": "LP",
+            "title": "The Smiths"
+        },
+        {
+            "artistName": "Nirvana",
+            "category": "ROCK",
+            "compositorName": "Nirvana",
+            "editionYear": 1991,
+            "euroPrice": 30,
+            "imageCover": "",
+            "personalNotes": "Cool gift for a nirvana supreme fan ",
+            "songs": [
+                {
+                    "duration": 300,
+                    "index": 1,
+                    "rating": 0,
+                    "title": "Smells Like Teen Spirit"
+                },
+                {
+                    "duration": 253,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "In Bloom"
+                },
+                {
+                    "duration": 198,
+                    "index": 3,
+                    "rating": 0,
+                    "title": "Come As You Are"
+                },
+                {
+                    "duration": 260,
+                    "index": 4,
+                    "rating": 0,
+                    "title": "Breed"
+                },
+                {
+                    "duration": 240,
+                    "index": 5,
+                    "rating": 0,
+                    "title": "Lithium"
+                },
+                {
+                    "duration": 200,
+                    "index": 6,
+                    "rating": 0,
+                    "title": "Polly"
+                },
+                {
+                    "duration": 180,
+                    "index": 7,
+                    "rating": 0,
+                    "title": "Territorial Pissings"
+                },
+                {
+                    "duration": 210,
+                    "index": 8,
+                    "rating": 0,
+                    "title": "Drain You"
+                },
+                {
+                    "duration": 254,
+                    "index": 9,
+                    "rating": 0,
+                    "title": "Lounge Act"
+                },
+                {
+                    "duration": 250,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Stay Away"
+                },
+                {
+                    "duration": 0,
+                    "index": 11,
+                    "rating": 0,
+                    "title": "On A Plain"
+                },
+                {
+                    "duration": 223,
+                    "index": 12,
+                    "rating": 0,
+                    "title": "Something In The Way"
+                }
+            ],
+            "supportType": "FLAC",
+            "title": "Nevermind"
+        }
+    ]
+}

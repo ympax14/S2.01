@@ -97,7 +97,7 @@ void NowPlayingWindow::loadAlbumsCollection() {
             this->masterAlbumsWidget->refresh(this->albumsCollection);
             this->successToast(tr("Collection Loaded"), tr("Collection loaded successfully"));
         } catch (std::invalid_argument& exception) {
-            this->errorToast(tr("Error while loading AlbumsCollection !"), tr("Invalid collection file !"));
+            this->errorToast(tr("Error while loading the album's collection !"), tr("Invalid collection file !"));
             qDebug() << "Invalid collection file " + filePath;
         }
     }
@@ -132,7 +132,7 @@ void NowPlayingWindow::newAlbum() {
     this->albumsCollection.addAlbum(new Album);
     this->masterAlbumsWidget->refresh(this->albumsCollection, this->masterAlbumsWidget->getFilter());
     this->unsavedChanges = true;
-    this->infoToast(tr("New Album"), tr("a new album has been added"));
+    this->successToast(tr("New Album"), tr("a new album has been added"));
 }
 
 void NowPlayingWindow::saveAlbum(size_t realIndex) {
@@ -172,7 +172,7 @@ void NowPlayingWindow::loadAlbum() {
                 this->masterAlbumsWidget->refresh(this->albumsCollection);
             } catch (std::invalid_argument& exception) {
                 this->errorToast(tr("Error while loading Album !"), tr("This album is already loaded !"));
-                qDebug() << "AlbumsCollection already contains this Album";
+                qDebug() << "the Album's Collection already contains this Album";
             }
         } catch (std::invalid_argument& exception) {
             this->errorToast(tr("Error while loading Album !"), tr("Invalid album file !"));
@@ -204,7 +204,7 @@ void NowPlayingWindow::saveAlbumsCollection(){
 }
 
 void NowPlayingWindow::saveAlbumsCollectionAs(){
-    QString filePath = QFileDialog::getSaveFileName(this, tr("Save AlbumsCollection As"), QDir::homePath(), "AlbumsCollection (*.json)");
+    QString filePath = QFileDialog::getSaveFileName(this, tr("Save Collection As"), QDir::homePath(), "Collection (*.json)");
     if (filePath.isEmpty()) return;
 
     if (!filePath.endsWith(".json")) {

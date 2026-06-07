@@ -1,0 +1,89 @@
+{
+    "albums": [
+        {
+            "artistName": "YEBBA",
+            "category": "RAP",
+            "compositorName": "Abbey Smith",
+            "editionYear": 2021,
+            "euroPrice": 14.99,
+            "imageCover": "https://i.discogs.com/v86BmSEPE6eaYgK-791h1rstsc3PkrL5zBSwqG9Wpxk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTky/MTk3LTE2MzEzNTMw/NjEtOTIzMi5qcGVn.jpeg",
+            "personalNotes": "Album debut de YEBBA, produit par Mark Ronson, dédié à sa mère disparue.",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "How Many Years"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Stand"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Boomerang"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "All I Ever Wanted"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Far Away"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Dawn"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "October Sky"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Louie Bag"
+                },
+                {
+                    "duration": 231,
+                    "index": 9,
+                    "rating": 0.89,
+                    "title": "Distance"
+                },
+                {
+                    "duration": 300,
+                    "index": 10,
+                    "rating": 0.98,
+                    "title": "My Mind"
+                },
+                {
+                    "duration": 189,
+                    "index": 11,
+                    "rating": 0.84,
+                    "title": "Love Came Down"
+                },
+                {
+                    "duration": 212,
+                    "index": 12,
+                    "rating": 0.86,
+                    "title": "Paranoia Purple"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Dawn"
+        }
+    ]
+}

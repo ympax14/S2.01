@@ -1,0 +1,77 @@
+{
+    "albums": [
+        {
+            "artistName": "Amy Winehouse",
+            "category": "POP",
+            "compositorName": "Amy Winehouse",
+            "editionYear": 2006,
+            "euroPrice": 38.7,
+            "imageCover": "https://i.discogs.com/NdldQe0P5ktTkjDoBFm9HLE0iiQ4xlqnDR2vNQ_Z0WU/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDgw/MDktMTM5MDk5MDQ4/OS02OTc5LmpwZWc.jpeg",
+            "personalNotes": "Sounds like a black revenge dress but tastes like sad liquor",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Rehab"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "You Know I'm No Good"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Me & Mr Jones"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Back To Black"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Love is A Losing Game"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Tears Dry On Their Own"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Wake up Alone"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Some Unholy War"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "He Can Only Hold Her"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "You Know I'm No Good"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Back To Black"
+        }
+    ]
+}

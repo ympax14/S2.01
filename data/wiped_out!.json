@@ -1,0 +1,83 @@
+{
+    "albums": [
+        {
+            "artistName": "The Neighbourhood",
+            "category": "ROCK",
+            "compositorName": "The Neighbourhood",
+            "editionYear": 2015,
+            "euroPrice": 36,
+            "imageCover": "https://i.discogs.com/SxDsNmKcPa9qkJdBIxMbDIWEqfvBzQbuRnXAMLWZLPM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNTc3/ODEtMTQ1ODEwMjA0/Ny0xNDk1LmpwZWc.jpeg",
+            "personalNotes": "",
+            "songs": [
+                {
+                    "duration": 30,
+                    "index": 1,
+                    "rating": 0,
+                    "title": "A Moment Of Silence"
+                },
+                {
+                    "duration": 320,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "Prey"
+                },
+                {
+                    "duration": 280,
+                    "index": 3,
+                    "rating": 0,
+                    "title": "Cry Baby"
+                },
+                {
+                    "duration": 370,
+                    "index": 4,
+                    "rating": 0,
+                    "title": "Wiped Out!"
+                },
+                {
+                    "duration": 270,
+                    "index": 5,
+                    "rating": 0,
+                    "title": "The Beach"
+                },
+                {
+                    "duration": 370,
+                    "index": 6,
+                    "rating": 0,
+                    "title": "Daddy Issues"
+                },
+                {
+                    "duration": 390,
+                    "index": 7,
+                    "rating": 0,
+                    "title": "Baby Came Home 2 / Valentines"
+                },
+                {
+                    "duration": 370,
+                    "index": 8,
+                    "rating": 0,
+                    "title": "Greetings From Califournia"
+                },
+                {
+                    "duration": 240,
+                    "index": 9,
+                    "rating": 0,
+                    "title": "Ferrari"
+                },
+                {
+                    "duration": 346,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Single"
+                },
+                {
+                    "duration": 205,
+                    "index": 11,
+                    "rating": 0,
+                    "title": "R.I.P. 2 My Youth"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Wiped Out! "
+        }
+    ]
+}

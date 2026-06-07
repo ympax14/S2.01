@@ -1,0 +1,71 @@
+ {
+    "albums": [
+        {
+            "artistName": "Bon Iver",
+            "category": "ROCK",
+            "compositorName": "Justin Vernon",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/PdpA5o2n31ijOV9lQFgIKqXpiAzj7IB7leNqmMoE2-M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjEw/MDctMTIxMjgwNDk3/My5qcGVn.jpeg",
+            "personalNotes": "Cute before bed playlist ",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Flume"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Lump Sum"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Skinny Love"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "The Wolves (Act I and II)"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Blindsided"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Creature fear"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Team"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "For Emma"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Re:Stacks"
+                }
+            ],
+            "supportType": "LP",
+            "title": "For Emma, Forever Ago"
+        }
+    ]
+ }

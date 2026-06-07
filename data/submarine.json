@@ -1,0 +1,101 @@
+{
+    "albums": [
+        {
+            "artistName": "The Marias",
+            "category": "POP",
+            "compositorName": "Josh Conway and María Zardoya",
+            "editionYear": 2024,
+            "euroPrice": 31.99,
+            "imageCover": "https://elitarecords.com/cdn/shop/files/R-30903558-1717828856-2815.jpg?v=1738067356",
+            "personalNotes": "Un melange entre le plus beau des bleu et la tristesse d'un dimanche",
+            "songs": [
+                {
+                    "duration": 72,
+                    "index": 1,
+                    "rating": 4,
+                    "title": "Ride"
+                },
+                {
+                    "duration": 185,
+                    "index": 2,
+                    "rating": 4.5,
+                    "title": "Hamptons"
+                },
+                {
+                    "duration": 197,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Echo"
+                },
+                {
+                    "duration": 144,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "Run Your Mouth"
+                },
+                {
+                    "duration": 196,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "Real Life"
+                },
+                {
+                    "duration": 207,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Blur"
+                },
+                {
+                    "duration": 211,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Paranoia"
+                },
+                {
+                    "duration": 180,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "Lejos De Ti"
+                },
+                {
+                    "duration": 214,
+                    "index": 9,
+                    "rating": 4.5,
+                    "title": "Love You Anyway"
+                },
+                {
+                    "duration": 181,
+                    "index": 10,
+                    "rating": 4.5,
+                    "title": "Ay No Puedo"
+                },
+                {
+                    "duration": 214,
+                    "index": 11,
+                    "rating": 4.5,
+                    "title": "No One Noticed"
+                },
+                {
+                    "duration": 129,
+                    "index": 12,
+                    "rating": 4.5,
+                    "title": "Vicious Sensitive Robot"
+                },
+                {
+                    "duration": 188,
+                    "index": 13,
+                    "rating": 4.5,
+                    "title": "If Only"
+                },
+                {
+                    "duration": 207,
+                    "index": 14,
+                    "rating": 4.5,
+                    "title": "Sienna"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Submarine"
+        }
+    ]
+}

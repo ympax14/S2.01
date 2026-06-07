@@ -1,182 +1,1324 @@
 {
     "albums": [
         {
-            "title": "The Dark Side of the Moon",
             "artistName": "Pink Floyd",
+            "category": "ROCK",
             "compositorName": "Roger Waters",
             "editionYear": 1973,
             "euroPrice": 24.99,
             "imageCover": "https://wallpapercave.com/wp/UQMnSUk.jpg",
-            "category": "ROCK",
-            "supportType": "LP",
             "personalNotes": "Chef-d'œuvre du rock progressif, intemporel.",
             "songs": [
-                {"index": 1, "title": "Speak to Me", "duration": 68, "rating": 4.0},
-                {"index": 2, "title": "Breathe", "duration": 169, "rating": 4.5},
-                {"index": 3, "title": "On the Run", "duration": 224, "rating": 4.0},
-                {"index": 4, "title": "Time", "duration": 421, "rating": 5.0},
-                {"index": 5, "title": "The Great Gig in the Sky", "duration": 284, "rating": 4.5},
-                {"index": 6, "title": "Money", "duration": 382, "rating": 5.0},
-                {"index": 7, "title": "Us and Them", "duration": 469, "rating": 4.5},
-                {"index": 8, "title": "Any Colour You Like", "duration": 205, "rating": 4.0},
-                {"index": 9, "title": "Brain Damage", "duration": 228, "rating": 4.5},
-                {"index": 10, "title": "Eclipse", "duration": 129, "rating": 4.5}
-            ]
+                {
+                    "duration": 68,
+                    "index": 1,
+                    "rating": 4,
+                    "title": "Speak to Me"
+                },
+                {
+                    "duration": 169,
+                    "index": 2,
+                    "rating": 4.5,
+                    "title": "Breathe"
+                },
+                {
+                    "duration": 224,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "On the Run"
+                },
+                {
+                    "duration": 421,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "Time"
+                },
+                {
+                    "duration": 284,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "The Great Gig in the Sky"
+                },
+                {
+                    "duration": 382,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Money"
+                },
+                {
+                    "duration": 469,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Us and Them"
+                },
+                {
+                    "duration": 205,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "Any Colour You Like"
+                },
+                {
+                    "duration": 228,
+                    "index": 9,
+                    "rating": 4.5,
+                    "title": "Brain Damage"
+                },
+                {
+                    "duration": 129,
+                    "index": 10,
+                    "rating": 4.5,
+                    "title": "Eclipse"
+                }
+            ],
+            "supportType": "LP",
+            "title": "The Dark Side of the Moon"
         },
         {
-            "title": "Kind of Blue",
             "artistName": "Miles Davis",
+            "category": "JAZZ",
             "compositorName": "Miles Davis",
             "editionYear": 1959,
             "euroPrice": 19.99,
             "imageCover": "https://store.sonymusic.fr/cdn/shop/files/MILES_DAVIS_Kind_of_blue_0194398021911_34faa772-aa0a-4220-a7c9-427aedcaa329.jpg",
-            "category": "JAZZ",
-            "supportType": "LP",
             "personalNotes": "L'album de jazz le plus vendu de tous les temps.",
             "songs": [
-                {"index": 1, "title": "So What", "duration": 562, "rating": 5.0},
-                {"index": 2, "title": "Freddie Freeloader", "duration": 590, "rating": 5.0},
-                {"index": 3, "title": "Blue in Green", "duration": 337, "rating": 4.5},
-                {"index": 4, "title": "All Blues", "duration": 692, "rating": 5.0},
-                {"index": 5, "title": "Flamenco Sketches", "duration": 565, "rating": 5.0}
-            ]
+                {
+                    "duration": 562,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "So What"
+                },
+                {
+                    "duration": 590,
+                    "index": 2,
+                    "rating": 5,
+                    "title": "Freddie Freeloader"
+                },
+                {
+                    "duration": 337,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Blue in Green"
+                },
+                {
+                    "duration": 692,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "All Blues"
+                },
+                {
+                    "duration": 565,
+                    "index": 5,
+                    "rating": 5,
+                    "title": "Flamenco Sketches"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Kind of Blue"
         },
         {
-            "title": "Thriller",
             "artistName": "Michael Jackson",
+            "category": "POP",
             "compositorName": "Quincy Jones",
             "editionYear": 1982,
             "euroPrice": 14.99,
             "imageCover": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
-            "category": "POP",
-            "supportType": "CD",
             "personalNotes": "L'album le plus vendu de l'histoire de la musique.",
             "songs": [
-                {"index": 1, "title": "Wanna Be Startin' Somethin'", "duration": 363, "rating": 4.5},
-                {"index": 2, "title": "Baby Be Mine", "duration": 260, "rating": 4.0},
-                {"index": 3, "title": "The Girl Is Mine", "duration": 222, "rating": 3.5},
-                {"index": 4, "title": "Thriller", "duration": 358, "rating": 5.0},
-                {"index": 5, "title": "Beat It", "duration": 258, "rating": 5.0},
-                {"index": 6, "title": "Billie Jean", "duration": 294, "rating": 5.0},
-                {"index": 7, "title": "Human Nature", "duration": 244, "rating": 4.5},
-                {"index": 8, "title": "P.Y.T. (Pretty Young Thing)", "duration": 239, "rating": 4.0},
-                {"index": 9, "title": "The Lady in My Life", "duration": 300, "rating": 4.0}
-            ]
+                {
+                    "duration": 363,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Wanna Be Startin' Somethin'"
+                },
+                {
+                    "duration": 260,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Baby Be Mine"
+                },
+                {
+                    "duration": 222,
+                    "index": 3,
+                    "rating": 3.5,
+                    "title": "The Girl Is Mine"
+                },
+                {
+                    "duration": 358,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "Thriller"
+                },
+                {
+                    "duration": 258,
+                    "index": 5,
+                    "rating": 5,
+                    "title": "Beat It"
+                },
+                {
+                    "duration": 294,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Billie Jean"
+                },
+                {
+                    "duration": 244,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Human Nature"
+                },
+                {
+                    "duration": 239,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "P.Y.T. (Pretty Young Thing)"
+                },
+                {
+                    "duration": 300,
+                    "index": 9,
+                    "rating": 4,
+                    "title": "The Lady in My Life"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Thriller"
         },
         {
-            "title": "Strong Persuader",
             "artistName": "Robert Cray",
+            "category": "BLUES",
             "compositorName": "Robert Cray",
             "editionYear": 1986,
             "euroPrice": 12.99,
             "imageCover": "https://m.media-amazon.com/images/I/51RFOrQt9tL._SY300_SX300_QL70_FMwebp_.jpg",
-            "category": "BLUES",
-            "supportType": "MP3",
             "personalNotes": "Album blues emblématique des années 80, Grammy Award du meilleur album de blues.",
             "songs": [
-                {"index": 1, "title": "Smoking Gun", "duration": 247, "rating": 5.0},
-                {"index": 2, "title": "I Guess I Showed Her", "duration": 198, "rating": 4.0},
-                {"index": 3, "title": "Right Next Door (Because of Me)", "duration": 318, "rating": 4.5},
-                {"index": 4, "title": "Nothin' But a Woman", "duration": 233, "rating": 4.0},
-                {"index": 5, "title": "Still Around", "duration": 242, "rating": 4.0},
-                {"index": 6, "title": "More Than I Can Stand", "duration": 213, "rating": 4.0},
-                {"index": 7, "title": "The Forecast (Calls for Pain)", "duration": 303, "rating": 4.5},
-                {"index": 8, "title": "I Wonder", "duration": 265, "rating": 4.0},
-                {"index": 9, "title": "False Accusations", "duration": 248, "rating": 4.5},
-                {"index": 10, "title": "Foul Play", "duration": 188, "rating": 4.0}
-            ]
+                {
+                    "duration": 247,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Smoking Gun"
+                },
+                {
+                    "duration": 198,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "I Guess I Showed Her"
+                },
+                {
+                    "duration": 318,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Right Next Door (Because of Me)"
+                },
+                {
+                    "duration": 233,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Nothin' But a Woman"
+                },
+                {
+                    "duration": 242,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Still Around"
+                },
+                {
+                    "duration": 213,
+                    "index": 6,
+                    "rating": 4,
+                    "title": "More Than I Can Stand"
+                },
+                {
+                    "duration": 303,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "The Forecast (Calls for Pain)"
+                },
+                {
+                    "duration": 265,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "I Wonder"
+                },
+                {
+                    "duration": 248,
+                    "index": 9,
+                    "rating": 4.5,
+                    "title": "False Accusations"
+                },
+                {
+                    "duration": 188,
+                    "index": 10,
+                    "rating": 4,
+                    "title": "Foul Play"
+                }
+            ],
+            "supportType": "MP3",
+            "title": "Strong Persuader"
         },
         {
-            "title": "To Pimp a Butterfly",
             "artistName": "Kendrick Lamar",
+            "category": "RAP",
             "compositorName": "Kendrick Lamar",
             "editionYear": 2015,
             "euroPrice": 13.99,
             "imageCover": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
-            "category": "RAP",
-            "supportType": "M4A",
             "personalNotes": "Œuvre majeure du hip-hop, mêlant jazz, funk et spoken word.",
             "songs": [
-                {"index": 1, "title": "Wesley's Theory", "duration": 257, "rating": 4.5},
-                {"index": 2, "title": "For Free? (Interlude)", "duration": 140, "rating": 4.0},
-                {"index": 3, "title": "King Kunta", "duration": 234, "rating": 4.5},
-                {"index": 4, "title": "Institutionalized", "duration": 280, "rating": 4.5},
-                {"index": 5, "title": "These Walls", "duration": 310, "rating": 4.5},
-                {"index": 6, "title": "u", "duration": 283, "rating": 4.5},
-                {"index": 7, "title": "Alright", "duration": 219, "rating": 5.0},
-                {"index": 8, "title": "For Sale? (Interlude)", "duration": 193, "rating": 4.0},
-                {"index": 9, "title": "Momma", "duration": 285, "rating": 4.5},
-                {"index": 10, "title": "Hood Politics", "duration": 276, "rating": 4.5},
-                {"index": 11, "title": "How Much a Dollar Cost", "duration": 249, "rating": 5.0},
-                {"index": 12, "title": "Complexion (A Zulu Love)", "duration": 278, "rating": 4.5},
-                {"index": 13, "title": "The Blacker the Berry", "duration": 325, "rating": 4.5},
-                {"index": 14, "title": "You Ain't Gotta Lie (Momma Said)", "duration": 245, "rating": 4.5},
-                {"index": 15, "title": "i", "duration": 341, "rating": 4.5},
-                {"index": 16, "title": "Mortal Man", "duration": 727, "rating": 4.5}
-            ]
+                {
+                    "duration": 257,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Wesley's Theory"
+                },
+                {
+                    "duration": 140,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "For Free? (Interlude)"
+                },
+                {
+                    "duration": 234,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "King Kunta"
+                },
+                {
+                    "duration": 280,
+                    "index": 4,
+                    "rating": 4.5,
+                    "title": "Institutionalized"
+                },
+                {
+                    "duration": 310,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "These Walls"
+                },
+                {
+                    "duration": 283,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "u"
+                },
+                {
+                    "duration": 219,
+                    "index": 7,
+                    "rating": 5,
+                    "title": "Alright"
+                },
+                {
+                    "duration": 193,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "For Sale? (Interlude)"
+                },
+                {
+                    "duration": 285,
+                    "index": 9,
+                    "rating": 4.5,
+                    "title": "Momma"
+                },
+                {
+                    "duration": 276,
+                    "index": 10,
+                    "rating": 4.5,
+                    "title": "Hood Politics"
+                },
+                {
+                    "duration": 249,
+                    "index": 11,
+                    "rating": 5,
+                    "title": "How Much a Dollar Cost"
+                },
+                {
+                    "duration": 278,
+                    "index": 12,
+                    "rating": 4.5,
+                    "title": "Complexion (A Zulu Love)"
+                },
+                {
+                    "duration": 325,
+                    "index": 13,
+                    "rating": 4.5,
+                    "title": "The Blacker the Berry"
+                },
+                {
+                    "duration": 245,
+                    "index": 14,
+                    "rating": 4.5,
+                    "title": "You Ain't Gotta Lie (Momma Said)"
+                },
+                {
+                    "duration": 341,
+                    "index": 15,
+                    "rating": 4.5,
+                    "title": "i"
+                },
+                {
+                    "duration": 727,
+                    "index": 16,
+                    "rating": 4.5,
+                    "title": "Mortal Man"
+                }
+            ],
+            "supportType": "M4A",
+            "title": "To Pimp a Butterfly"
         },
         {
-            "title": "Symphonie n°9",
             "artistName": "Orchestre Philharmonique de Berlin",
+            "category": "CLASSIC",
             "compositorName": "Ludwig van Beethoven",
             "editionYear": 2000,
             "euroPrice": 18.99,
             "imageCover": "https://m.media-amazon.com/images/I/61IGdMd5fpL._SL1010_.jpg",
-            "category": "CLASSIC",
-            "supportType": "FLAC",
             "personalNotes": "La plus grande symphonie jamais composée, direction Herbert von Karajan.",
             "songs": [
-                {"index": 1, "title": "I. Allegro ma non troppo, un poco maestoso", "duration": 1440, "rating": 5.0},
-                {"index": 2, "title": "II. Molto vivace", "duration": 1080, "rating": 4.5},
-                {"index": 3, "title": "III. Adagio molto e cantabile", "duration": 1320, "rating": 5.0},
-                {"index": 4, "title": "IV. Presto - Allegro assai - Ode à la joie", "duration": 1500, "rating": 5.0}
-            ]
+                {
+                    "duration": 1440,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "I. Allegro ma non troppo, un poco maestoso"
+                },
+                {
+                    "duration": 1080,
+                    "index": 2,
+                    "rating": 4.5,
+                    "title": "II. Molto vivace"
+                },
+                {
+                    "duration": 1320,
+                    "index": 3,
+                    "rating": 5,
+                    "title": "III. Adagio molto e cantabile"
+                },
+                {
+                    "duration": 1500,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "IV. Presto - Allegro assai - Ode à la joie"
+                }
+            ],
+            "supportType": "FLAC",
+            "title": "Symphonie n°9"
         },
         {
-            "title": "Histoire de Melody Nelson",
             "artistName": "Serge Gainsbourg",
+            "category": "FRENCH",
             "compositorName": "Serge Gainsbourg",
             "editionYear": 1971,
             "euroPrice": 21.99,
             "imageCover": "https://i.discogs.com/MAo2IomIiOLAybsvIPIW2vOcYeAayvS99a-ivleoIgo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE2/NTMtMTQ3NzgzNDE3/Ny0yMDQyLmpwZWc.jpeg",
-            "category": "FRENCH",
-            "supportType": "K7",
             "personalNotes": "Un concept album français, poétique et cinématographique. Orchestration de Jean-Claude Vannier.",
             "songs": [
-                {"index": 1, "title": "Melody", "duration": 212, "rating": 4.5},
-                {"index": 2, "title": "Ballade de Melody Nelson", "duration": 205, "rating": 5.0},
-                {"index": 3, "title": "Valse de Melody", "duration": 156, "rating": 4.5},
-                {"index": 4, "title": "Ah! Melody", "duration": 183, "rating": 4.0},
-                {"index": 5, "title": "L'Hotel particulier", "duration": 226, "rating": 4.5},
-                {"index": 6, "title": "En Melody", "duration": 192, "rating": 4.0},
-                {"index": 7, "title": "Cargo Culte", "duration": 286, "rating": 4.5}
-            ]
+                {
+                    "duration": 212,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Melody"
+                },
+                {
+                    "duration": 205,
+                    "index": 2,
+                    "rating": 5,
+                    "title": "Ballade de Melody Nelson"
+                },
+                {
+                    "duration": 156,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Valse de Melody"
+                },
+                {
+                    "duration": 183,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Ah! Melody"
+                },
+                {
+                    "duration": 226,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "L'Hotel particulier"
+                },
+                {
+                    "duration": 192,
+                    "index": 6,
+                    "rating": 4,
+                    "title": "En Melody"
+                },
+                {
+                    "duration": 286,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Cargo Culte"
+                }
+            ],
+            "supportType": "K7",
+            "title": "Histoire de Melody Nelson"
         },
         {
-            "title": "Random Access Memories",
             "artistName": "Daft Punk",
+            "category": "ELECTRO",
             "compositorName": "Thomas Bangalter",
             "editionYear": 2013,
             "euroPrice": 16.99,
             "imageCover": "https://groundzero.fr/wp-content/uploads/2023/02/daft-punk-random-access-memories-anniversary-edition-1677082645.jpeg",
-            "category": "ELECTRO",
-            "supportType": "CD",
             "personalNotes": "Un retour aux sources analogiques pour les maîtres de l'électro française. Grammy Album of the Year 2014.",
             "songs": [
-                {"index": 1, "title": "Give Life Back to Music", "duration": 274, "rating": 4.5},
-                {"index": 2, "title": "The Game of Love", "duration": 230, "rating": 4.0},
-                {"index": 3, "title": "Giorgio by Moroder", "duration": 549, "rating": 4.5},
-                {"index": 4, "title": "Within", "duration": 228, "rating": 4.0},
-                {"index": 5, "title": "Instant Crush", "duration": 337, "rating": 4.5},
-                {"index": 6, "title": "Lose Yourself to Dance", "duration": 345, "rating": 4.5},
-                {"index": 7, "title": "Touch", "duration": 498, "rating": 4.5},
-                {"index": 8, "title": "Get Lucky", "duration": 369, "rating": 5.0},
-                {"index": 9, "title": "Beyond", "duration": 279, "rating": 4.0},
-                {"index": 10, "title": "Motherboard", "duration": 334, "rating": 4.0},
-                {"index": 11, "title": "Fragments of Time", "duration": 290, "rating": 4.0},
-                {"index": 12, "title": "Doin' it Right", "duration": 296, "rating": 4.0},
-                {"index": 13, "title": "Contact", "duration": 401, "rating": 4.5}
-            ]
+                {
+                    "duration": 274,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Give Life Back to Music"
+                },
+                {
+                    "duration": 230,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "The Game of Love"
+                },
+                {
+                    "duration": 549,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Giorgio by Moroder"
+                },
+                {
+                    "duration": 228,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Within"
+                },
+                {
+                    "duration": 337,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "Instant Crush"
+                },
+                {
+                    "duration": 345,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Lose Yourself to Dance"
+                },
+                {
+                    "duration": 498,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Touch"
+                },
+                {
+                    "duration": 369,
+                    "index": 8,
+                    "rating": 5,
+                    "title": "Get Lucky"
+                },
+                {
+                    "duration": 279,
+                    "index": 9,
+                    "rating": 4,
+                    "title": "Beyond"
+                },
+                {
+                    "duration": 334,
+                    "index": 10,
+                    "rating": 4,
+                    "title": "Motherboard"
+                },
+                {
+                    "duration": 290,
+                    "index": 11,
+                    "rating": 4,
+                    "title": "Fragments of Time"
+                },
+                {
+                    "duration": 296,
+                    "index": 12,
+                    "rating": 4,
+                    "title": "Doin' it Right"
+                },
+                {
+                    "duration": 401,
+                    "index": 13,
+                    "rating": 4.5,
+                    "title": "Contact"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Random Access Memories"
+        },
+        {
+            "artistName": "The Marias",
+            "category": "POP",
+            "compositorName": "Josh Conway and María Zardoya",
+            "editionYear": 2024,
+            "euroPrice": 31.99,
+            "imageCover": "https://elitarecords.com/cdn/shop/files/R-30903558-1717828856-2815.jpg?v=1738067356",
+            "personalNotes": "Un melange entre le plus beau des bleu et la tristesse d'un dimanche",
+            "songs": [
+                {
+                    "duration": 72,
+                    "index": 1,
+                    "rating": 4,
+                    "title": "Ride"
+                },
+                {
+                    "duration": 185,
+                    "index": 2,
+                    "rating": 4.5,
+                    "title": "Hamptons"
+                },
+                {
+                    "duration": 197,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Echo"
+                },
+                {
+                    "duration": 144,
+                    "index": 4,
+                    "rating": 5,
+                    "title": "Run Your Mouth"
+                },
+                {
+                    "duration": 196,
+                    "index": 5,
+                    "rating": 4.5,
+                    "title": "Real Life"
+                },
+                {
+                    "duration": 207,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Blur"
+                },
+                {
+                    "duration": 211,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Paranoia"
+                },
+                {
+                    "duration": 180,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "Lejos De Ti"
+                },
+                {
+                    "duration": 214,
+                    "index": 9,
+                    "rating": 4.5,
+                    "title": "Love You Anyway"
+                },
+                {
+                    "duration": 181,
+                    "index": 10,
+                    "rating": 4.5,
+                    "title": "Ay No Puedo"
+                },
+                {
+                    "duration": 214,
+                    "index": 11,
+                    "rating": 4.5,
+                    "title": "No One Noticed"
+                },
+                {
+                    "duration": 129,
+                    "index": 12,
+                    "rating": 4.5,
+                    "title": "Vicious Sensitive Robot"
+                },
+                {
+                    "duration": 188,
+                    "index": 13,
+                    "rating": 4.5,
+                    "title": "If Only"
+                },
+                {
+                    "duration": 207,
+                    "index": 14,
+                    "rating": 4.5,
+                    "title": "Sienna"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Submarine"
+        },
+        {
+            "artistName": "YEBBA",
+            "category": "RAP",
+            "compositorName": "Abbey Smith",
+            "editionYear": 2021,
+            "euroPrice": 14.99,
+            "imageCover": "https://i.discogs.com/v86BmSEPE6eaYgK-791h1rstsc3PkrL5zBSwqG9Wpxk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTky/MTk3LTE2MzEzNTMw/NjEtOTIzMi5qcGVn.jpeg",
+            "personalNotes": "Album debut de YEBBA, produit par Mark Ronson, dédié à sa mère disparue.",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "How Many Years"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Stand"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Boomerang"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "All I Ever Wanted"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Far Away"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Dawn"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "October Sky"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Louie Bag"
+                },
+                {
+                    "duration": 231,
+                    "index": 9,
+                    "rating": 0.89,
+                    "title": "Distance"
+                },
+                {
+                    "duration": 300,
+                    "index": 10,
+                    "rating": 0.98,
+                    "title": "My Mind"
+                },
+                {
+                    "duration": 189,
+                    "index": 11,
+                    "rating": 0.84,
+                    "title": "Love Came Down"
+                },
+                {
+                    "duration": 212,
+                    "index": 12,
+                    "rating": 0.86,
+                    "title": "Paranoia Purple"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Dawn"
+        },
+        {
+            "artistName": "Prince And The Revolution",
+            "category": "ROCK",
+            "compositorName": "Prince",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/mSIjl1G4gAdx2xw9iLG1fBmNPLz_5GNo0bLqeWyDMh4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDAy/MS0xMzM1NDAwMjg5/LmpwZWc.jpeg",
+            "personalNotes": "Pure nostalgia and sonder",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Let's Go Crazy"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Take Me With U"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "The Beautiful Ones"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Computer Blue"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Darling Nikki"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "When Doves Cry"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "I Would Die 4 U"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Baby I'm A Star"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Purple Rain"
+        },
+        {
+            "artistName": "Bon Iver",
+            "category": "ROCK",
+            "compositorName": "Justin Vernon",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/PdpA5o2n31ijOV9lQFgIKqXpiAzj7IB7leNqmMoE2-M/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjEw/MDctMTIxMjgwNDk3/My5qcGVn.jpeg",
+            "personalNotes": "Cute before bed playlist ",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Flume"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Lump Sum"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Skinny Love"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "The Wolves (Act I and II)"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Blindsided"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Creature fear"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Team"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "For Emma"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Re:Stacks"
+                }
+            ],
+            "supportType": "LP",
+            "title": "For Emma, Forever Ago"
+        },
+        {
+            "artistName": "Amy Winehouse",
+            "category": "POP",
+            "compositorName": "Amy Winehouse",
+            "editionYear": 2006,
+            "euroPrice": 38.7,
+            "imageCover": "https://i.discogs.com/NdldQe0P5ktTkjDoBFm9HLE0iiQ4xlqnDR2vNQ_Z0WU/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDgw/MDktMTM5MDk5MDQ4/OS02OTc5LmpwZWc.jpeg",
+            "personalNotes": "Sounds like a black revenge dress but tastes like sad liquor",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Rehab"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "You Know I'm No Good"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Me & Mr Jones"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Back To Black"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Love is A Losing Game"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Tears Dry On Their Own"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Wake up Alone"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Some Unholy War"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "He Can Only Hold Her"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "You Know I'm No Good"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Back To Black"
+        },
+        {
+            "artistName": "Lana Del Rey",
+            "category": "ROCK",
+            "compositorName": "Lana Del Rey",
+            "editionYear": 2012,
+            "euroPrice": 25.2,
+            "imageCover": "https://i.discogs.com/TS2SBf1-Ofj_INRjxfMOAMZknOSXEWTYPGrYZoJi05Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjI0/NTcwLTE1Nzg0MTAz/MDAtMzU0My5qcGVn.jpeg",
+            "personalNotes": "A never ending pain",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Cruel World"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Ultraviolence"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Shades Of Cool"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Brooklyn Baby"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "West Coast"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Sad Girl"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Pretty When You Cry"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Money Power Glory"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Fucked My Way To The Top"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "Old Money"
+                },
+                {
+                    "duration": 178,
+                    "index": 11,
+                    "rating": 0.8,
+                    "title": "The Other Woman"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Ultraviolence"
+        },
+        {
+            "artistName": "Francis Cabrel",
+            "category": "POP",
+            "compositorName": "Francis Cabrel",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/rbRp9J7rIM9cwJajqWSjMBShbP1XBXOHjyanR6plTa0/rs:fit/g:sm/q:90/h:537/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NzMw/NTQtMTU5NjIzODc1/Ny04Njc2LmpwZWc.jpeg",
+            "personalNotes": "I just like Cabrel's vibe",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "La Corrida"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Assis Sur Le Rebord Du Monde"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "La Cabane Du Pêcheur"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Samedi Soir Sur La Terre"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Je T'aimais, Je T'aime, Je T'aimerai"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Les Vidanges Du Diable"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "L'arbre Va Tomber"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Octobre"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Le Noceur"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "Tôt Ou Tard S'en Aller"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Samedi Soir Sur La Terre"
+        },
+        {
+            "artistName": "The Smiths",
+            "category": "ROCK",
+            "compositorName": "The Smiths ",
+            "editionYear": 1984,
+            "euroPrice": 999,
+            "imageCover": "https://i.discogs.com/Iap-1vWJ0MIJx7rx6V_CpMo-om6Z6ibBO8LuGgrPRTA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTcw/OTYtMTU4MDI1NDk5/Ny01ODgzLmpwZWc.jpeg",
+            "personalNotes": "",
+            "songs": [
+                {
+                    "duration": 330,
+                    "index": 1,
+                    "rating": 4.5,
+                    "title": "Reel Around The Fountain"
+                },
+                {
+                    "duration": 290,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "You've Got Everything Now"
+                },
+                {
+                    "duration": 250,
+                    "index": 3,
+                    "rating": 4.5,
+                    "title": "Miserable Lie"
+                },
+                {
+                    "duration": 260,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Pretty Girls Make Graves.ft  Annalisa Jablonska"
+                },
+                {
+                    "duration": 300,
+                    "index": 5,
+                    "rating": 5,
+                    "title": "The Hand That Rocks The Cradle"
+                },
+                {
+                    "duration": 310,
+                    "index": 6,
+                    "rating": 5,
+                    "title": "Still Ill"
+                },
+                {
+                    "duration": 260,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Hand In Glove"
+                },
+                {
+                    "duration": 300,
+                    "index": 8,
+                    "rating": 4,
+                    "title": "What Difference Does It Make?"
+                },
+                {
+                    "duration": 330,
+                    "index": 9,
+                    "rating": 5,
+                    "title": "I Don't Owe You Anything"
+                },
+                {
+                    "duration": 329,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Suffer Little Children"
+                }
+            ],
+            "supportType": "LP",
+            "title": "The Smiths"
+        },
+        {
+            "artistName": "Nirvana",
+            "category": "ROCK",
+            "compositorName": "Nirvana",
+            "editionYear": 1991,
+            "euroPrice": 30,
+            "imageCover": "https://i.discogs.com/os3Gm61mroiZvEw2bIGtNDf0RXydEx8PRmIk-YYwBSU/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg",
+            "personalNotes": "Cool gift for a nirvana supreme fan ",
+            "songs": [
+                {
+                    "duration": 300,
+                    "index": 1,
+                    "rating": 0,
+                    "title": "Smells Like Teen Spirit"
+                },
+                {
+                    "duration": 253,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "In Bloom"
+                },
+                {
+                    "duration": 198,
+                    "index": 3,
+                    "rating": 0,
+                    "title": "Come As You Are"
+                },
+                {
+                    "duration": 260,
+                    "index": 4,
+                    "rating": 0,
+                    "title": "Breed"
+                },
+                {
+                    "duration": 240,
+                    "index": 5,
+                    "rating": 0,
+                    "title": "Lithium"
+                },
+                {
+                    "duration": 200,
+                    "index": 6,
+                    "rating": 0,
+                    "title": "Polly"
+                },
+                {
+                    "duration": 180,
+                    "index": 7,
+                    "rating": 0,
+                    "title": "Territorial Pissings"
+                },
+                {
+                    "duration": 210,
+                    "index": 8,
+                    "rating": 0,
+                    "title": "Drain You"
+                },
+                {
+                    "duration": 254,
+                    "index": 9,
+                    "rating": 0,
+                    "title": "Lounge Act"
+                },
+                {
+                    "duration": 250,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Stay Away"
+                },
+                {
+                    "duration": 0,
+                    "index": 11,
+                    "rating": 0,
+                    "title": "On A Plain"
+                },
+                {
+                    "duration": 223,
+                    "index": 12,
+                    "rating": 0,
+                    "title": "Something In The Way"
+                }
+            ],
+            "supportType": "FLAC",
+            "title": "Nevermind"
+        },
+         {
+            "artistName": "The Neighbourhood",
+            "category": "ROCK",
+            "compositorName": "The Neighbourhood",
+            "editionYear": 2015,
+            "euroPrice": 36,
+            "imageCover": "https://i.discogs.com/SxDsNmKcPa9qkJdBIxMbDIWEqfvBzQbuRnXAMLWZLPM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNTc3/ODEtMTQ1ODEwMjA0/Ny0xNDk1LmpwZWc.jpeg",
+            "personalNotes": "",
+            "songs": [
+                {
+                    "duration": 30,
+                    "index": 1,
+                    "rating": 0,
+                    "title": "A Moment Of Silence"
+                },
+                {
+                    "duration": 320,
+                    "index": 2,
+                    "rating": 0,
+                    "title": "Prey"
+                },
+                {
+                    "duration": 280,
+                    "index": 3,
+                    "rating": 0,
+                    "title": "Cry Baby"
+                },
+                {
+                    "duration": 370,
+                    "index": 4,
+                    "rating": 0,
+                    "title": "Wiped Out!"
+                },
+                {
+                    "duration": 270,
+                    "index": 5,
+                    "rating": 0,
+                    "title": "The Beach"
+                },
+                {
+                    "duration": 370,
+                    "index": 6,
+                    "rating": 0,
+                    "title": "Daddy Issues"
+                },
+                {
+                    "duration": 390,
+                    "index": 7,
+                    "rating": 0,
+                    "title": "Baby Came Home 2 / Valentines"
+                },
+                {
+                    "duration": 370,
+                    "index": 8,
+                    "rating": 0,
+                    "title": "Greetings From Califournia"
+                },
+                {
+                    "duration": 240,
+                    "index": 9,
+                    "rating": 0,
+                    "title": "Ferrari"
+                },
+                {
+                    "duration": 346,
+                    "index": 10,
+                    "rating": 0,
+                    "title": "Single"
+                },
+                {
+                    "duration": 205,
+                    "index": 11,
+                    "rating": 0,
+                    "title": "R.I.P. 2 My Youth"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Wiped Out! "
         }
     ]
 }

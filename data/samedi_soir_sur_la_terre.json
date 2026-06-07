@@ -1,0 +1,77 @@
+{
+    "albums": [
+        {
+            "artistName": "Francis Cabrel",
+            "category": "POP",
+            "compositorName": "Francis Cabrel",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/rbRp9J7rIM9cwJajqWSjMBShbP1XBXOHjyanR6plTa0/rs:fit/g:sm/q:90/h:537/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NzMw/NTQtMTU5NjIzODc1/Ny04Njc2LmpwZWc.jpeg",
+            "personalNotes": "I just like Cabrel's vibe",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "La Corrida"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Assis Sur Le Rebord Du Monde"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "La Cabane Du Pêcheur"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Samedi Soir Sur La Terre"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Je T'aimais, Je T'aime, Je T'aimerai"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Les Vidanges Du Diable"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "L'arbre Va Tomber"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Octobre"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Le Noceur"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "Tôt Ou Tard S'en Aller"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Samedi Soir Sur La Terre"
+        }
+    ]
+}

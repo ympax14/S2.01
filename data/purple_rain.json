@@ -1,0 +1,65 @@
+{
+    "albums": [
+        {
+            "artistName": "Prince And The Revolution",
+            "category": "ROCK",
+            "compositorName": "Prince",
+            "editionYear": 1984,
+            "euroPrice": 20.32,
+            "imageCover": "https://i.discogs.com/mSIjl1G4gAdx2xw9iLG1fBmNPLz_5GNo0bLqeWyDMh4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NDAy/MS0xMzM1NDAwMjg5/LmpwZWc.jpeg",
+            "personalNotes": "Pure nostalgia and sonder",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Let's Go Crazy"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Take Me With U"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "The Beautiful Ones"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Computer Blue"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "Darling Nikki"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "When Doves Cry"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "I Would Die 4 U"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Baby I'm A Star"
+                }
+            ],
+            "supportType": "LP",
+            "title": "Purple Rain"
+        }
+    ]
+}

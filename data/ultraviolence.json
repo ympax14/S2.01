@@ -1,0 +1,83 @@
+{
+    "albums": [
+        {
+            "artistName": "Lana Del Rey",
+            "category": "ROCK",
+            "compositorName": "Lana Del Rey",
+            "editionYear": 2012,
+            "euroPrice": 25.2,
+            "imageCover": "https://i.discogs.com/TS2SBf1-Ofj_INRjxfMOAMZknOSXEWTYPGrYZoJi05Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjI0/NTcwLTE1Nzg0MTAz/MDAtMzU0My5qcGVn.jpeg",
+            "personalNotes": "A never ending pain",
+            "songs": [
+                {
+                    "duration": 218,
+                    "index": 1,
+                    "rating": 5,
+                    "title": "Cruel World"
+                },
+                {
+                    "duration": 195,
+                    "index": 2,
+                    "rating": 4,
+                    "title": "Ultraviolence"
+                },
+                {
+                    "duration": 203,
+                    "index": 3,
+                    "rating": 4,
+                    "title": "Shades Of Cool"
+                },
+                {
+                    "duration": 224,
+                    "index": 4,
+                    "rating": 4,
+                    "title": "Brooklyn Baby"
+                },
+                {
+                    "duration": 187,
+                    "index": 5,
+                    "rating": 4,
+                    "title": "West Coast"
+                },
+                {
+                    "duration": 210,
+                    "index": 6,
+                    "rating": 4.5,
+                    "title": "Sad Girl"
+                },
+                {
+                    "duration": 245,
+                    "index": 7,
+                    "rating": 4.5,
+                    "title": "Pretty When You Cry"
+                },
+                {
+                    "duration": 178,
+                    "index": 8,
+                    "rating": 0.8,
+                    "title": "Money Power Glory"
+                },
+                {
+                    "duration": 178,
+                    "index": 9,
+                    "rating": 0.8,
+                    "title": "Fucked My Way To The Top"
+                },
+                {
+                    "duration": 178,
+                    "index": 10,
+                    "rating": 0.8,
+                    "title": "Old Money"
+                },
+                {
+                    "duration": 178,
+                    "index": 11,
+                    "rating": 0.8,
+                    "title": "The Other Woman"
+                }
+            ],
+            "supportType": "CD",
+            "title": "Ultraviolence"
+        }
+    ]
+}
