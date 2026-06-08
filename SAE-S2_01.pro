@@ -27,6 +27,9 @@ HEADERS += \
     ./src/DetailsWidget.hpp \
     ./src/utils/Network.hpp
 
+RESOURCES += resources.qrc \
+    resources.qrc
+
 TRANSLATIONS += \
     ./langs/SAE-S2_01_fr_FR.ts
 
@@ -42,6 +45,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     .gitignore \
+    style.qss \
     tests/Makefile
 
 TOAST_ICONS_DIR = $$PWD/includes/qt-toast/icons
