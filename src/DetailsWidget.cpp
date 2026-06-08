@@ -12,6 +12,8 @@
 #include <QHBoxLayout>
 #include <QScrollArea>
 
+#include "NowPlayingWindow.hpp"
+
 DetailsWidget::DetailsWidget(QWidget *parent) :
     QWidget{parent},
     mainLayout(new QVBoxLayout(this)),
@@ -52,11 +54,15 @@ void DetailsWidget::loadImage(const QString& path) {
     QPixmap pixmap;
     if (Network::isUrl(path))
         pixmap = Network::fetchImage(path);
-    else
-        pixmap.load(path);
+    else pixmap.load(path);
 
-    if (!pixmap.isNull())
+    if (!pixmap.isNull()) {
         pixmap = pixmap.scaledToHeight(this->imageView->height(), Qt::SmoothTransformation);
+    } else {
+        NowPlayingWindow* window = dynamic_cast<NowPlayingWindow*>(this->parentWidget()->parentWidget()); // On remonte de deux niveaux car splitter -> window
+        assert(window != nullptr); // Présent seulement avec les symboles de déboguages, check de "précaution"
+        window->errorToast("Album Cover", "Invalid Image");
+    }
 
     this->imageScene->addPixmap(pixmap);
     this->imageScene->setSceneRect(pixmap.rect());
