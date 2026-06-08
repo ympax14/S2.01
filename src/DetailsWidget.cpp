@@ -10,6 +10,7 @@
 #include <QPushButton>
 #include <QFileDialog>
 #include <QHBoxLayout>
+#include <QScrollArea>
 
 DetailsWidget::DetailsWidget(QWidget *parent) :
     QWidget{parent},
@@ -19,6 +20,10 @@ DetailsWidget::DetailsWidget(QWidget *parent) :
     imageScene(new QGraphicsScene(this)),
     imageView(new QGraphicsView(this))
 {
+    QScrollArea *scrollArea = new QScrollArea(this);
+    QWidget *scrollContent = new QWidget;
+    QVBoxLayout *scrollLayout = new QVBoxLayout(scrollContent);
+
     imageView->setScene(imageScene);
     imageView->setFixedHeight(300);
     imageView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -28,10 +33,17 @@ DetailsWidget::DetailsWidget(QWidget *parent) :
     notesEdit->setFixedHeight(100);
     notesEdit->hide();
 
-    mainLayout->addWidget(imageView);
-    mainLayout->addLayout(informationsLayout);
-    mainLayout->addWidget(notesEdit);
-    mainLayout->addStretch();
+    scrollLayout->addWidget(imageView);
+    scrollLayout->addLayout(informationsLayout);
+    scrollLayout->addWidget(notesEdit);
+    scrollLayout->addStretch();
+
+    scrollContent->setLayout(scrollLayout);
+    scrollArea->setWidget(scrollContent);
+    scrollArea->setWidgetResizable(true);
+    mainLayout->addWidget(scrollArea);
+    mainLayout->setContentsMargins(0, 0, 0, 0);
+    setLayout(mainLayout);
 }
 
 void DetailsWidget::loadImage(const QString& path) {

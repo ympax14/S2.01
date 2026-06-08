@@ -4,6 +4,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QCloseEvent>
+#include <QStatusBar>
 
 const int NowPlayingWindow::WINDOW_HEIGHT = 720;
 const int NowPlayingWindow::WINDOW_WIDTH = 1280;
@@ -12,22 +13,20 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
     QMainWindow(parent),
 
     openMenu(this->menuBar()->addMenu("&Open")),
-    openAlbumsCollectionAction(this->openMenu->addAction(tr("&Albums Collection"))),
+    //openAlbumsCollectionAction(this->openMenu->addAction(tr("&Albums Collection"))),
 
     saveMenu(this->menuBar()->addMenu("&Save")),
-    saveAlbumsCollectionAction(this->saveMenu->addAction(tr("&Albums Collection"))),
-    saveAlbumsCollectionAsAction(this->saveMenu->addAction(tr("&Save As..."))),
-
-    addAlbumFromFileAction(this->openMenu->addAction(tr("&Add Album from file"))),
-    openAlbumsCollectionXmlAction(this->openMenu->addAction(tr("&Albums Collection (XML)"))),
-    saveAlbumsCollectionXmlAction(this->saveMenu->addAction(tr("&Albums Collection (XML)"))),
-    saveAlbumsCollectionXmlAsAction(this->saveMenu->addAction(tr("&Save As... (XML)"))),
+    //saveAlbumsCollectionAction(this->saveMenu->addAction(tr("&Albums Collection"))),
+    //saveAlbumsCollectionAsAction(this->saveMenu->addAction(tr("&Save As..."))),
+    //addAlbumFromFileAction(this->openMenu->addAction(tr("&Add Album from file"))),
+    //openAlbumsCollectionXmlAction(this->openMenu->addAction(tr("&Albums Collection (XML)"))),
+    //saveAlbumsCollectionXmlAction(this->saveMenu->addAction(tr("&Albums Collection (XML)"))),
+    //saveAlbumsCollectionXmlAsAction(this->saveMenu->addAction(tr("&Save As... (XML)"))),
 
     masterAlbumsWidget(new MasterAlbumsWidget),
     detailsWidget(new DetailsWidget),
 
-    splitter(new QSplitter(Qt::Horizontal, this)),
-    mainLayout(new QHBoxLayout(this->splitter))
+    splitter(new QSplitter(Qt::Horizontal, this))
 {
     this->setupWindow();
     this->connectActions();
@@ -36,13 +35,31 @@ NowPlayingWindow::NowPlayingWindow(QWidget *parent) :
 NowPlayingWindow::~NowPlayingWindow() {}
 
 void NowPlayingWindow::setupWindow() {
+
+    //submenu open
+    openAlbumsCollectionSubMenu = this->openMenu->addMenu(tr("Albums Collection"));
+    openAlbumsCollectionAction = openAlbumsCollectionSubMenu->addAction(tr("JSON"));
+    openAlbumsCollectionXmlAction = openAlbumsCollectionSubMenu->addAction(tr("XML"));
+    addAlbumFromFileAction = this->openMenu->addAction(tr("Add Album from file"));
+
+    //submenu save
+    saveAlbumsCollectionSubMenu = this->saveMenu->addMenu(tr("Albums Collection"));
+    saveAlbumsCollectionAction = saveAlbumsCollectionSubMenu->addAction(tr("Save (JSON)"));
+    saveAlbumsCollectionAsAction = saveAlbumsCollectionSubMenu->addAction(tr("Save As... (JSON)"));
+    saveAlbumsCollectionXmlAction = saveAlbumsCollectionSubMenu->addAction(tr("Save (XML)"));
+    saveAlbumsCollectionXmlAsAction = saveAlbumsCollectionSubMenu->addAction(tr("Save As... (XML)"));
     this->resize(NowPlayingWindow::WINDOW_WIDTH, NowPlayingWindow::WINDOW_HEIGHT);
+    this->setMinimumSize(1000, 600);
     this->setCentralWidget(this->splitter);
 
     this->detailsWidget->hide();
 
     this->splitter->addWidget(this->masterAlbumsWidget); // Côté gauche -> Albums et Sons (Master)
     this->splitter->addWidget(this->detailsWidget); // Côté droit -> Informations (Details)
+
+    this->splitter->setSizes({500, 580});
+    this->masterAlbumsWidget->setMinimumWidth(350);
+    this->statusBar()->showMessage(tr("No collection loaded"));
 }
 
 void NowPlayingWindow::connectActions() {
@@ -106,6 +123,9 @@ void NowPlayingWindow::loadAlbumsCollection() {
             this->unsavedChanges = false;
             this->masterAlbumsWidget->refresh(this->albumsCollection);
             this->successToast(tr("Collection Loaded"), tr("Collection loaded successfully"));
+            this->statusBar()->showMessage(
+                tr("%1 albums loaded").arg(this->albumsCollection.getSize())
+            );
         } catch (std::invalid_argument& exception) {
             this->errorToast(tr("Error while loading the album's collection !"), tr("Invalid collection file !"));
             qDebug() << "Invalid collection file " + filePath;

@@ -18,6 +18,15 @@ MasterAlbumsWidget::MasterAlbumsWidget(QWidget *parent) :
 
     // for the title
     labelTitle->setAlignment(Qt::AlignCenter); // horizontal center
+    labelTitle->setStyleSheet(
+        "background-color: #2c2c2e;"
+        "color: #fc3c44;"
+        "font-size: 18px;"
+        "font-weight: bold;"
+        "padding: 12px;"
+        "border-radius: 4px;"
+        "letter-spacing: 3px;"
+        );
     QFont font = labelTitle->font();
     font.setPointSize(14);
     font.setBold(true);

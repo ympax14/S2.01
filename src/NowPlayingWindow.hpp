@@ -28,27 +28,28 @@ private:
     AlbumsCollection albumsCollection;
 
     QMenu * const openMenu;
-    QAction * const openAlbumsCollectionAction;
+    QMenu * openAlbumsCollectionSubMenu; // sous-menu
+    QAction * openAlbumsCollectionAction ;
+    QAction * openAlbumsCollectionXmlAction;
+    QAction * addAlbumFromFileAction;
+
 
     QMenu * const saveMenu;
-    QAction * const saveAlbumsCollectionAction;
-    QAction * const saveAlbumsCollectionAsAction; // represents Save as
+    QMenu * saveAlbumsCollectionSubMenu; // sous-menu
+    QAction * saveAlbumsCollectionAction;
+    QAction * saveAlbumsCollectionAsAction;
+    QAction * saveAlbumsCollectionXmlAction;
+    QAction * saveAlbumsCollectionXmlAsAction;
 
     MasterAlbumsWidget * const masterAlbumsWidget;
     DetailsWidget * const detailsWidget;
 
     QSplitter * const splitter;
-    QHBoxLayout * const mainLayout;
+    //QHBoxLayout * const mainLayout;
 
     QString currentFilePath; // saves the file's path
     bool unsavedChanges = false; // false if there's no modifications, true if there's any changes
 
-    QAction * const addAlbumFromFileAction;
-
-    QAction * const openAlbumsCollectionXmlAction;
-    QAction * const saveAlbumsCollectionXmlAction;
-
-    QAction * const saveAlbumsCollectionXmlAsAction;
 public:
     inline const AlbumsCollection& getAlbumsCollection() const {
         return this->albumsCollection;
