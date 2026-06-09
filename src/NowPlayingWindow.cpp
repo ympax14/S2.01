@@ -36,6 +36,8 @@ NowPlayingWindow::~NowPlayingWindow() {}
 
 void NowPlayingWindow::setupWindow() {
 
+    setWindowTitle("Now Playing");
+
     //submenu open
     openAlbumsCollectionSubMenu = this->openMenu->addMenu(tr("Albums Collection"));
     openAlbumsCollectionAction = openAlbumsCollectionSubMenu->addAction(tr("JSON"));
